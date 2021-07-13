@@ -1,0 +1,4 @@
+{% if settings.analytics.google %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-{{ settings.analytics.google }}"></script>
+  <script src="assets/gtag.js"></script>
+{% endif %}

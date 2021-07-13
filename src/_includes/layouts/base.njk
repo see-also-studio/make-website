@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ helper.title(title, permalink) }}</title>
+  <script type="module">
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
+  <link rel="stylesheet" href="/assets/styles/main.css">
+  <meta name="description" content="{{ description or metadata.description }}">
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="{{ settings.styles.themeColor }}">
+  {% include "partials/analytics/google.njk" %}
+</head>
+<body>
+  {% include "partials/header.njk" %}
+  {{ content | safe }}
+  {% include "partials/footer.njk" %}
+</body>
+</html>

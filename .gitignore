@@ -1,0 +1,10 @@
+# Ignore npm
+/node_modules/
+
+# Ignore site build
+/_site/
+/src/assets/*
+!/src/assets/scripts/
+
+# Ignore local Netlify folder
+.netlify
