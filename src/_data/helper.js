@@ -3,7 +3,6 @@ module.exports = {
     const metadata = require('./metadata.json');
     const seperator = '—';
     let title = '';
-    console.log(metadata);
     if (pageUrl === '/') {
       title = metadata.title + (metadata.tagline ? ' ' + seperator + ' ' + metadata.tagline : '');
     } else {
