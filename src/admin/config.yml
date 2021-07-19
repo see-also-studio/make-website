@@ -1,0 +1,159 @@
+backend:
+  name: git-gateway
+  branch: master
+
+local_backend: true
+
+media_folder: "/src/media/uploads"
+public_folder: "/media/uploads"
+
+show_preview_links: false
+search: false
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: "src/pages"
+    create: false
+    delete: false
+    editor:
+      preview: true
+    fields:
+      - name: "title"
+        label: "Title"
+        widget: "string"
+        required: true
+      - name: "layout"
+        widget: "hidden"
+        default: "layouts/page.njk"
+      - name: "permalink"
+        label: "Permalink"
+        widget: "string"
+      - name: "description"
+        label: "Meta description"
+        widget: "text"
+        required: false
+      - name: "sections"
+        label: "Page Sections"
+        widget: "list"
+        collapsed: false
+        required: false
+        fields:
+          - name: "heading"
+            label: "Section Heading"
+            widget: string
+            required: true
+          - name: "open"
+            label: "Section open on page load"
+            widget: "boolean"
+            default: true
+            required: true
+          - name: "section"
+            label: "Section"
+            widget: "list"
+            collapsed: false
+            required: true
+            types:
+              - name: "content"
+                label: "Text Block"
+                widget: "object"
+                fields:
+                  - name: "content"
+                    label: "Content"
+                    widget: "markdown"
+                    buttons: [bold, italic, link, bulleted-list]
+                    editor_components: []
+                    modes: [rich_text]
+                    required: false
+
+              - name: "images"
+                label: "Image Gallery Block"
+                widget: "object"
+                fields:
+                  - name: "images"
+                    label: "Gallery"
+                    label_singular: "Image"
+                    widget: "list"
+                    collapsed: false
+                    min: 1
+                    fields:
+                    - name: "src"
+                      label: "Upload"
+                      widget: "image"
+                      media_library:
+                        allow_multiple: false
+                        config:
+                          max_file_size: 5000000
+                    - name: "alt"
+                      label: "Alt text"
+                      widget: "string"
+                      required: false
+                    - name: "caption"
+                      label: "Caption"
+                      widget: "text"
+                      required: false
+
+              - name: "buttonLink"
+                label: "Link Button Block"
+                widget: "object"
+                fields:
+                  - name: "content"
+                    label: "Button Text"
+                    widget: "string"
+                  - name: "href"
+                    label: "Button Url"
+                    widget: "string"
+
+              - name: "buttonFile"
+                label: "File Button Block"
+                widget: "object"
+                fields:
+                  - name: "content"
+                    label: "Button Tet"
+                    widget: "string"
+                  - name: "href"
+                    label: "Document Upload"
+                    widget: "file"
+                    media_library:
+                      allow_multiple: false
+                      config:
+                        max_file_size: 5000000
+
+              - name: "map"
+                label: "Map"
+                widget: "object"
+                fields:
+                  - name: "location"
+                    label: "Map"
+                    widget: "map"
+                  - name: "alt"
+                    label: "Map alt text"
+                    widget: "string"
+                    required: false
+
+              - name: "imagesGrid"
+                label: "Image Grid"
+                widget: "object"
+                fields:
+                  - name: "images"
+                    label: "Images"
+                    label_singular: "Image"
+                    widget: "list"
+                    collapsed: false
+                    min: 1
+                    fields:
+                    - name: "src"
+                      label: "Upload"
+                      widget: "image"
+                      media_library:
+                        allow_multiple: false
+                        config:
+                          max_file_size: 5000000
+                    - name: "alt"
+                      label: "Alt text"
+                      widget: "string"
+                      required: false
+                    - name: "href"
+                      label: "Link"
+                      widget: "string"
+                      required: false
