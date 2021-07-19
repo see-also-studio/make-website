@@ -3,7 +3,7 @@ const pluginSass = require("eleventy-plugin-sass");
 const sassPluginOptions = {
     sourcemaps: true,
     cleanCSS: true,
-    watch: ["build/styles/**/*.scss"],
+    watch: ["src/build/styles/**/*.scss"],
     outputDir: "_site/assets/styles",
 };
 
@@ -45,9 +45,9 @@ module.exports = function(eleventyConfig) {
 
 
   // Folder passthroughs
-  eleventyConfig.addPassthroughCopy("images");
-  eleventyConfig.addPassthroughCopy("admin");
-  eleventyConfig.addPassthroughCopy("assets");
+  eleventyConfig.addPassthroughCopy("src/images");
+  eleventyConfig.addPassthroughCopy("src/admin");
+  eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/media/uploads");
 
 
