@@ -1,0 +1,7 @@
+---
+permalink: assets/scripts/main.min.js
+---
+{% set js %}
+  {% include "./main.js.njk" %}
+{% endset %}
+{{ js | jsmin | safe }}
