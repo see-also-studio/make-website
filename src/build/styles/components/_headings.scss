@@ -1,0 +1,12 @@
+.heading--large {
+  --border--large: 2px dotted var(--color--foreground);
+
+  font-size: 1.62rem;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-right: 0.5em;
+  margin-bottom: 3.85rem;
+
+  border-top: var(--border--large);
+  border-bottom: var(--border--large);
+}

@@ -1,0 +1,34 @@
+body {
+  counter-reset: section;
+}
+
+.expandable {
+  .expandable__summary {
+    cursor: pointer;
+
+    .expandable__heading {
+      font-size: var(--font-size--heading);
+
+      &::before {
+        counter-increment: section;
+        content: counter(section, decimal-leading-zero) ". ";
+      }
+    }
+  }
+
+  .expandable__wrapper {
+    overflow: hidden;
+
+    @include breakpoint(medium) {
+      padding-left: calc(var(--indent) * 1%);
+    }
+
+    > *:first-child {
+      margin-top: 2.7rem;
+    }
+
+    > *:last-child {
+      margin-bottom: 3.25rem;
+    }
+  }
+}
