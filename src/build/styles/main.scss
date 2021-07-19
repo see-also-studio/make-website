@@ -1,6 +1,8 @@
 @import "common/breakpoints";
 @import "common/reset";
 
+@import "includes/flickity";
+
 @import "common/variables";
 @import "common/fonts";
 @import "common/global";
@@ -9,3 +11,4 @@
 
 @import "components/headings";
 @import "components/expandable";
+@import "components/image-gallery";

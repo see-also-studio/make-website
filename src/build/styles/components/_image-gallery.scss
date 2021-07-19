@@ -1,0 +1,76 @@
+.gallery {
+  .flickity-viewport {
+    width: 100%;
+    transition: height 200ms;
+  }
+
+  .gallery__item {
+    width: 100%; /* full width */
+    margin-right: 10px;
+
+    img {
+      width: 100%;
+      aspect-ratio: 5 / 3.2;
+      object-fit: contain;
+      object-position: center bottom;
+    }
+  }
+
+
+  figcaption {
+    font-size: var(--font-size--small);
+    text-align: center;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+
+  .flickity-button {
+    background: transparent;
+  }
+
+  .flickity-prev-next-button {
+    padding: 1rem;
+
+    &::before {
+      content: "";
+      display: block;
+      background: var(--color--foreground);
+      border-radius: 50%;
+      width: 0.76rem;
+      height: 0.76rem;
+    }
+  }
+
+  &.gallery--full {
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+  }
+
+  &:not(:first-child) {
+    margin-top: 3.25rem;
+  }
+
+  margin-bottom: 3.25rem;
+
+  &.gallery--double {
+    display: flex;
+    gap: 1rem;
+
+    .gallery__item {
+      margin-right: 0;
+    }
+  }
+}
+
+.expandable {
+  .gallery.gallery--double {
+    --indent-reverse: calc(100% / ((100 / var(--indent)) - 1) * -1);
+
+    @include breakpoint(medium) {
+      margin-left: var(--indent-reverse);
+    }
+  }
+}
