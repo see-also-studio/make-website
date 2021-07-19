@@ -1,0 +1,11 @@
+<div class="image-grid" data-length="{{ item.images | length }}">
+  {% for image in item.images %}
+    {% if image.href %}
+    <a href="{{ image.href }}" target="_blank">
+      <img class="image-grid__item" src="{{ image.src }}" alt="{{ image.alt }}">
+    </a>
+    {% else %}
+    <img class="image-grid__item" src="{{ image.src }}" alt="{{ image.alt }}">
+    {% endif %}
+  {% endfor %}
+</div>

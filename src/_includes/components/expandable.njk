@@ -6,6 +6,10 @@
         {% include "components/blocks/text.njk" %}
       {% elif item.type === "images" %}
         {% include "components/blocks/image-gallery.njk" %}
+      {% elif item.type === "buttonLink" %}
+        {% include "components/blocks/button-link.njk" %}
+      {% elif item.type === "buttonFile" %}
+        {% include "components/blocks/button-link.njk" %}
       {% endif %}
     {% endfor %}
   </div>
