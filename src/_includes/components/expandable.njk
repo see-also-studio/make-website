@@ -2,6 +2,9 @@
   <summary class="expandable__summary"><h2 class="expandable__heading">{{ section.heading }}</h2></summary>
   <div class="expandable__wrapper">
     {% for item in section.section %}
+      {% if item.type === "content" %}
+        {% include "components/blocks/text.njk" %}
+      {% endif %}
     {% endfor %}
   </div>
 </details>
