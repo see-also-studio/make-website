@@ -1,0 +1,44 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  --line-height: 1.1;
+
+  font-family: sans-serif;
+  line-height: var(--line-height);
+  color: var(--color--foreground);
+  background: var(--color--background);
+}
+
+main {
+  padding: 0 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p:not(:first-child) {
+  margin-top: calc(1em * var(--line-height));
+}
+
+a {
+  color: inherit;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 1px;
+  position: relative;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-size: bold;
+}

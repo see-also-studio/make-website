@@ -1,0 +1,23 @@
+ul:not([class]) {
+  li {
+    text-indent: 0.7em;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      background: var(--color--foreground);
+      height: 0.3em;
+      width: 0.3em;
+      border-radius: 50%;
+      margin-top: calc(0.5em * var(--line-height));
+      transform: translateY(-50%);
+    }
+
+  }
+
+  &:not(:first-child) {
+    margin-top: calc(1em * var(--line-height));
+  }
+}

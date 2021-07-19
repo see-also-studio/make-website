@@ -1,0 +1,18 @@
+.screen-reader,
+.hidden {
+  display: none;
+}
+
+@include breakpoint(medium) {
+  .content-mobile {
+    display: none;
+  }
+}
+
+.content-desktop {
+  display: none;
+
+  @include breakpoint(medium) {
+    display: block;
+  }
+}
