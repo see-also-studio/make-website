@@ -24,7 +24,6 @@ module.exports = {
 
   mapLink(mapData) {
     mapData = JSON.parse(mapData);
-    console.log(mapData.coordinates);
     let string = 'https://www.google.com/maps/place/@';
     string += mapData.coordinates[1] + ',' + mapData.coordinates[0];
     string += ',18z';
