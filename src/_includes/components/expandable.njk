@@ -10,6 +10,8 @@
         {% include "components/blocks/button-link.njk" %}
       {% elif item.type === "buttonFile" %}
         {% include "components/blocks/button-link.njk" %}
+      {% elif item.type === "imagesGrid" %}
+        {% include "components/blocks/image-grid.njk" %}
       {% endif %}
     {% endfor %}
   </div>
