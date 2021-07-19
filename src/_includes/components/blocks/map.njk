@@ -1,5 +1,6 @@
-<a href="{{ helper.mapLink(item.location) }}" target="_blank">
+<a class="map" href="{{ helper.mapLink(item.location) }}" target="_blank">
   <img
     src="{{ helper.mapStatic(item.location) }}"
-    alt="{{ item.alt }}">
+    alt="{{ item.alt }}"
+    loading="lazy">
 </a>

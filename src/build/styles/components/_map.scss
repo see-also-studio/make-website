@@ -1,0 +1,12 @@
+.map {
+  display: block;
+  margin-bottom: 2.45rem;
+
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+
+  img {
+    width: 100%;
+  }
+}
