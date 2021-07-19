@@ -47,7 +47,7 @@ module.exports = function(eleventyConfig) {
     html: true,
   }).use(mdIterator, 'url_new_win', 'link_open', function (tokens, idx) {
     const [attrName, href] = tokens[idx].attrs.find(attr => attr[0] === 'href');
-    if (href && (!href.includes('colouring-in.com') && !href.startsWith('/') && !href.startsWith('#'))) {
+    if (href && (!href.includes('makeatsomerstown.com') && !href.startsWith('/') && !href.startsWith('#'))) {
       tokens[idx].attrPush([ 'target', '_blank' ]);
       //tokens[idx].attrPush([ 'rel', 'noopener noreferrer' ]);
     }
