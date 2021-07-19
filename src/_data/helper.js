@@ -29,5 +29,17 @@ module.exports = {
     string += mapData.coordinates[1] + ',' + mapData.coordinates[0];
     string += ',18z';
     return string;
+  },
+
+  galleryType(length) {
+    string ='';
+    if (length === 1) {
+      string = ' gallery--single';
+    } else if (length === 2) {
+      string = ' gallery--double';
+    } else if (length >= 3) {
+      string = ' gallery--full';
+    }
+    return string;
   }
 };
