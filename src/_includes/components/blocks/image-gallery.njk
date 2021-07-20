@@ -1,10 +1,14 @@
 <div class="gallery{{ helper.galleryType(item.images | length) }}" data-length="{{ item.images | length }}">
-  {% for image in item.images %}
-  <figure class="gallery__item">
-    <img src="{{ image.src }}" alt="{{ image.alt }}" loading="lazy">
-    {% if image.caption %}
-    <figcaption>{{ image.caption }}</figcaption>
-    {% endif %}
-  </figure>
-  {% endfor %}
+  <div class="gallery__wrapper swiper-wrapper">
+    {% for image in item.images %}
+    <figure class="gallery__item swiper-slide">
+      <img src="{{ image.src }}" alt="{{ image.alt }}" loading="lazy">
+      {% if image.caption %}
+      <figcaption>{{ image.caption }}</figcaption>
+      {% endif %}
+    </figure>
+    {% endfor %}
+  </div>
+  <div class="gallery__button gallery__button--prev swiper-button-prev"></div>
+  <div class="gallery__button gallery__button--next swiper-button-next"></div>
 </div>

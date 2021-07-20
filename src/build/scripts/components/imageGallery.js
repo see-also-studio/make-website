@@ -1,12 +1,18 @@
 const galleries = document.querySelectorAll('.gallery--full');
 
 galleries.forEach(function(el) {
-  new Flickity(el, {
-    cellSelector: '.gallery__item',
-    adaptiveHeight: true,
-    imagesLoaded: true,
-    pageDots: false,
-    arrowShape: '',
-    fade: true,
+  new Swiper(el, {
+    autoHeight: true,
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    keyboard: {
+      enabled: true,
+    },
   });
 });

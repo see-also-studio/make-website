@@ -37,7 +37,7 @@ module.exports = {
     } else if (length === 2) {
       string = ' gallery--double';
     } else if (length >= 3) {
-      string = ' gallery--full';
+      string = ' gallery--full swiper-container';
     }
     return string;
   }
