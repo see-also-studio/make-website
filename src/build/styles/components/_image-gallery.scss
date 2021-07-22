@@ -1,4 +1,5 @@
 .gallery {
+  position: relative;
   margin-bottom: 3.25rem;
 
   &:not(:first-child) {
@@ -26,20 +27,24 @@
   }
 
   .gallery__button {
+    position: absolute;
     background: transparent;
-    padding: 0 1rem;
+    padding: 1rem;
     width: auto;
     height: auto;
+    cursor: pointer;
+    z-index: 10;
     top: 0;
-    bottom: 0;
+    margin-top: calc(40% * 0.64); /* margin top is based on el width. 40% of width instead of 50% to account for 10% each side spacing. 0.64 is 5:3.2 ratio. */
+    transform: translateY(-50%);
 
     &::after {
       content: "";
       display: block;
       background: var(--color--foreground);
       border-radius: 50%;
-      width: 0.76rem;
-      height: 0.76rem;
+      width: 0.75rem;
+      height: 0.75rem;
     }
 
     &.gallery__button--prev {
@@ -47,12 +52,14 @@
       right: auto;
     }
 
-    &.gallery__prev--next {
+    &.gallery__button--next {
       right: 0;
       left: auto;
     }
 
     &.swiper-button-disabled {
+      pointer-events: none;
+
       &::after {
         opacity: 0.5;
       }
@@ -67,14 +74,16 @@
     .gallery__item {
       box-sizing: border-box;
       width: 100%;
-      padding-left: 2.8rem;
-      padding-right: 2.8rem;
+      padding-left: 10%;
+      padding-right: 10%;
     }
   }
 
   &.gallery--double {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
+
 
     .gallery__item {
       margin-right: 0;

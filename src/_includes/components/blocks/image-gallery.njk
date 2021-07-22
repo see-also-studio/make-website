@@ -1,5 +1,8 @@
-<div class="gallery{{ helper.galleryType(item.images | length) }}" data-length="{{ item.images | length }}">
+{% set galleryType = helper.galleryType(item.images | length) %}
+<div class="gallery gallery--{{ helper.galleryType(item.images | length) }}" data-length="{{ item.images | length }}">
+  {% if galleryType === "full" %}
   <div class="gallery__wrapper swiper-wrapper">
+  {% endif %}
     {% for image in item.images %}
     <figure class="gallery__item swiper-slide">
       <img src="{{ image.src }}" alt="{{ image.alt }}" loading="lazy">
@@ -8,7 +11,9 @@
       {% endif %}
     </figure>
     {% endfor %}
+  {% if galleryType === "full" %}
   </div>
   <div class="gallery__button gallery__button--prev swiper-button-prev"></div>
   <div class="gallery__button gallery__button--next swiper-button-next"></div>
+  {% endif %}
 </div>

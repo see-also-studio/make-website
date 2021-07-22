@@ -33,11 +33,11 @@ module.exports = {
   galleryType(length) {
     string ='';
     if (length === 1) {
-      string = ' gallery--single';
+      string = 'single';
     } else if (length === 2) {
-      string = ' gallery--double';
+      string = 'double';
     } else if (length >= 3) {
-      string = ' gallery--full swiper-container';
+      string = 'full';
     }
     return string;
   }
