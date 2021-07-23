@@ -1,12 +1,14 @@
 .button--rounded {
   display: block;
-  width: max-content;
+  width: auto;
+  max-width: max-content;
   font-size: var(--font-size--small);
   text-decoration: none;
   background: var(--color--alt1);
   border: var(--border);
   border-radius: 10rem;
   padding: 0.56rem 0.76rem;
+  text-align: center;
 }
 
 .button--rounded:not(:first-child):not(.button--rounded + .button--rounded) {
