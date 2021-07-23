@@ -7,9 +7,24 @@ galleries.forEach(function(el) {
     fadeEffect: {
       crossFade: true,
     },
+    pagination: {
+      el: ".gallery__pagination",
+      type: "fraction",
+      formatFractionCurrent: function(number) {
+        return number < 10 ? ('0' + number).slice(-2) : number;
+      },
+      formatFractionTotal: function(number) {
+        return number < 10 ? ('0' + number).slice(-2) : number;
+      },
+      renderFraction: function (currentClass, totalClass) {
+        return '<span class="' + currentClass + '"></span>' +
+               '<span class="gallery__pagination-seperator">/</span>'  +
+               '<span class="' + totalClass + '"></span>';
+      }
+    },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.gallery__button--next',
+      prevEl: '.gallery__button--prev',
     },
     keyboard: {
       enabled: true,
