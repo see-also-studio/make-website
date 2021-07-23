@@ -1,6 +1,9 @@
-<a class="map" href="{{ helper.mapLink(item.location) }}" target="_blank">
-  <img
-    src="{{ helper.mapStatic(item.location) }}"
-    alt="{{ item.alt }}"
-    loading="lazy">
-</a>
+<iframe
+  class="map"
+  title="{{ item.alt }}"
+  src="{{ helper.mapStatic(item.location) }}"
+  width="800"
+  height="500"
+  allowfullscreen=""
+  loading="lazy"
+></iframe>

@@ -12,13 +12,11 @@ module.exports = {
   },
 
   mapStatic(mapData) {
-    const apiKeys = require('./settings/keys.json');
     mapData = JSON.parse(mapData);
-    let string = 'https://maps.googleapis.com/maps/api/staticmap?autoscale=false&size=640x420&maptype=roadmap';
-    string += '&key=' + apiKeys.maps;
-    string += '&format=png&visual_refresh=true';
-    string += '&markers=size:mid%7Ccolor:0xff8080%7Clabel:';
-    string += '%7C' + mapData.coordinates[1] + ',' + mapData.coordinates[0];
+    let string = "";
+    string += "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d379.7704046114002!2d";
+    string += mapData.coordinates[0] + "!3d" + mapData.coordinates[1];
+    string += "!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1627035212276!5m2!1sen!2suk";
     return string;
   },
 
