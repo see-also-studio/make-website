@@ -1,5 +1,8 @@
 .gallery {
+  --padding: 6.67%;
+
   position: relative;
+  overflow: hidden;
   margin-bottom: 3.25rem;
 
   &:not(:first-child) {
@@ -35,7 +38,7 @@
     cursor: pointer;
     z-index: 10;
     top: 0;
-    margin-top: calc(40% * 0.64); /* margin top is based on el width. 40% of width instead of 50% to account for 10% each side spacing. 0.64 is 5:3.2 ratio. */
+    margin-top: calc((50% - var(--padding)) * 0.64); /* margin top is based on el width. 40% of width instead of 50% to account for 10% each side spacing. 0.64 is 5:3.2 ratio. */
     transform: translateY(-50%);
 
     &::after {
@@ -48,12 +51,12 @@
     }
 
     &.gallery__button--prev {
-      left: 0;
+      left: -1rem;
       right: auto;
     }
 
     &.gallery__button--next {
-      right: 0;
+      right: -1rem;
       left: auto;
     }
 
@@ -74,8 +77,8 @@
     .gallery__item {
       box-sizing: border-box;
       width: 100%;
-      padding-left: 10%;
-      padding-right: 10%;
+      padding-left: var(--padding);
+      padding-right: var(--padding);
     }
   }
 
