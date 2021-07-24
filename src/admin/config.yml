@@ -13,7 +13,7 @@ search: false
 collections:
   - name: "pages"
     label: "Pages"
-    folder: "src/content/pages"
+    folder: "src/pages"
     create: false
     delete: false
     editor:
