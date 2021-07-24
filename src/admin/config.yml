@@ -28,7 +28,7 @@ collections:
         default: "layouts/page.njk"
       - name: "permalink"
         label: "Permalink"
-        widget: "string"
+        widget: "hidden"
       - name: "description"
         label: "Meta description"
         widget: "text"
