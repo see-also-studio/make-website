@@ -33,6 +33,7 @@ collections:
         label: "Meta description"
         widget: "text"
         required: false
+        hint: "Brief page description shown on search engines and when sharing."
       - name: "sections"
         label: "Page Sections"
         widget: "list"
@@ -88,6 +89,7 @@ collections:
                       label: "Alt text"
                       widget: "string"
                       required: false
+                      hint: "(Accessibility) Alt text should visually describe the image."
                     - name: "caption"
                       label: "Caption"
                       widget: "text"
@@ -153,6 +155,7 @@ collections:
                       label: "Alt text"
                       widget: "string"
                       required: false
+                      hint: "(Accessibility) Alt text should visually describe the image."
                     - name: "href"
                       label: "Link"
                       widget: "string"
@@ -180,17 +183,33 @@ collections:
             label: "Site description"
             widget: "text"
             required: false
+            hint: "Default site description displayed by search engines and when sharing."
 
       - name: "analytics"
         label: "Analytics"
         file: "src/_data/settings/analytics.json"
         fields:
           - name: "google"
-            label: "Google analytics ID (excluding initial UA-)"
+            label: "Google analytics ID"
             widget: "string"
             required: false
+            hint: "String excluding the initial UA-"
           - name: "cloudflare"
             label: "Cloudflare analytics beacon token"
             widget: "string"
             required: false
 
+      - name: "tags"
+        label: "Activity Tags"
+        file: "src/_data/tags.json"
+        fields:
+          - name: "tags"
+            label: "Tags"
+            widget: "list"
+            collapsed: false
+            hint: "Here you can manage the list of tags to be applied to activity cards."
+            field:
+              name: "tag"
+              label: "Tag Name"
+              widget: "string"
+              required: true
