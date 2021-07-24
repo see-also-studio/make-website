@@ -157,3 +157,40 @@ collections:
                       label: "Link"
                       widget: "string"
                       required: false
+
+  - name: "settings"
+    label: "Settings"
+    create: false
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "metadata"
+        label: "Site settings"
+        file: "src/_data/metadata.json"
+        fields:
+          - name: "title"
+            label: "Site title"
+            widget: "string"
+          - name: "tagline"
+            label: "Tag line"
+            widget: "string"
+            required: false
+          - name: "description"
+            label: "Site description"
+            widget: "text"
+            required: false
+
+      - name: "analytics"
+        label: "Analytics"
+        file: "src/_data/settings/analytics.json"
+        fields:
+          - name: "google"
+            label: "Google analytics ID (excluding initial UA-)"
+            widget: "string"
+            required: false
+          - name: "cloudflare"
+            label: "Cloudflare analytics beacon token"
+            widget: "string"
+            required: false
+
