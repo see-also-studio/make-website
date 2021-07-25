@@ -19,10 +19,17 @@
 }
 
 .footer__links {
+  margin-top: calc(var(--line-height) * 1em);
+
+  @include breakpoint(medium) {
+    display: flex;
+    gap: 1.25em;
+    margin: 0;
+  }
+
   .footer__link {
     text-indent: 0.7em;
     position: relative;
-    display: inline-block;
 
     &::before {
       content: "";
@@ -35,14 +42,11 @@
       margin-top: calc(0.5em * var(--line-height));
       transform: translateY(-50%);
     }
-
-    &:not(:last-child) {
-      margin-right: 1.25em;
-    }
   }
 
   a {
     text-decoration: none;
+    display: block;
   }
 }
 
