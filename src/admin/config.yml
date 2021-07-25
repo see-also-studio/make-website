@@ -13,9 +13,10 @@ search: false
 collections:
   - name: "pages"
     label: "Pages"
+    label_singular: "Page"
     folder: "src/pages"
-    create: false
-    delete: false
+    create: true
+    delete: true
     editor:
       preview: true
     fields:
@@ -29,6 +30,7 @@ collections:
       - name: "permalink"
         label: "Permalink"
         widget: "hidden"
+        default: "{{ title | slug }}/"
       - name: "description"
         label: "Meta description"
         widget: "text"
@@ -39,21 +41,240 @@ collections:
         widget: "list"
         collapsed: false
         required: false
+        types:
+          - name: "title"
+            label: "Section Title"
+            widget: "object"
+            collapsed: false
+            fields:
+              - name: "title"
+                label: "Title"
+                widget: "string"
+
+          - name: "expandable"
+            label: "Expandable Section"
+            widget: "object"
+            collaposed: false
+            fields:
+              - name: "heading"
+                label: "Expandable Section Heading"
+                widget: string
+                required: true
+              - name: "open"
+                label: "Section open on page load"
+                widget: "hidden"
+                default: true
+                required: true
+              - name: "section"
+                label: "Expandable Section Content"
+                label_singular: "Content Block"
+                widget: "list"
+                collapsed: false
+                required: true
+                types:
+                  - name: "content"
+                    label: "Text Block"
+                    widget: "object"
+                    fields:
+                      - name: "content"
+                        label: "Content"
+                        widget: "markdown"
+                        buttons: [bold, italic, link, bulleted-list]
+                        editor_components: []
+                        modes: [rich_text]
+                        required: false
+
+                  - name: "images"
+                    label: "Image Gallery Block"
+                    widget: "object"
+                    fields:
+                      - name: "images"
+                        label: "Gallery"
+                        label_singular: "Image"
+                        widget: "list"
+                        collapsed: false
+                        min: 1
+                        fields:
+                        - name: "src"
+                          label: "Upload"
+                          widget: "image"
+                          media_library:
+                            allow_multiple: false
+                            config:
+                              max_file_size: 5000000
+                        - name: "alt"
+                          label: "Alt text"
+                          widget: "string"
+                          required: false
+                          hint: "(Accessibility) Alt text should visually describe the image."
+                        - name: "caption"
+                          label: "Caption"
+                          widget: "text"
+                          required: false
+
+                  - name: "buttonLink"
+                    label: "Link Button Block"
+                    widget: "object"
+                    fields:
+                      - name: "content"
+                        label: "Button Text"
+                        widget: "string"
+                      - name: "href"
+                        label: "Button Url"
+                        widget: "string"
+
+                  - name: "buttonFile"
+                    label: "File Button Block"
+                    widget: "object"
+                    fields:
+                      - name: "content"
+                        label: "Button Tet"
+                        widget: "string"
+                      - name: "href"
+                        label: "Document Upload"
+                        widget: "file"
+                        media_library:
+                          allow_multiple: false
+                          config:
+                            max_file_size: 5000000
+
+                  - name: "map"
+                    label: "Map"
+                    widget: "object"
+                    fields:
+                      - name: "location"
+                        label: "Map"
+                        widget: "map"
+                      - name: "alt"
+                        label: "Map alt text"
+                        widget: "string"
+                        required: false
+
+                  - name: "imagesGrid"
+                    label: "Image Grid"
+                    widget: "object"
+                    fields:
+                      - name: "images"
+                        label: "Images"
+                        label_singular: "Image"
+                        widget: "list"
+                        collapsed: false
+                        min: 1
+                        fields:
+                        - name: "src"
+                          label: "Upload"
+                          widget: "image"
+                          media_library:
+                            allow_multiple: false
+                            config:
+                              max_file_size: 5000000
+                        - name: "alt"
+                          label: "Alt text"
+                          widget: "string"
+                          required: false
+                          hint: "(Accessibility) Alt text should visually describe the image."
+                        - name: "href"
+                          label: "Link"
+                          widget: "string"
+                          required: false
+
+  - name: "activities"
+    label: "Activities"
+    label_singular: "Activity"
+    folder: "src/activities"
+    create: true
+    delete: true
+    editor:
+      preview: true
+    fields:
+      - name: "title"
+        label: "Title"
+        widget: "string"
+        required: true
+      - name: "layout"
+        widget: "hidden"
+        default: "layouts/activity.njk"
+      - name: "permalink"
+        label: "Permalink"
+        widget: "hidden"
+        default: "activities/{{ title | slug }}/"
+      - name: "description"
+        label: "Activity Description"
+        widget: "text"
+        required: false
+        hint: "Brief text description of the activity."
+      - name: "tags"
+        label: "Activity Tags"
+        widget: "relation"
+        collection: "settings"
+        file: "tags"
+        value_field: "tags.*"
+        search_fields: ["tags.*"]
+        multiple: true
+        max: 5
+        hint: "(Max 5) Select tags that apply to this activity."
+      - name: "activityMeta"
+        label: "Activity Metadata"
+        widget: "list"
+        collapsed: false
+        required: false
+        fields:
+          - name: "heading"
+            label: "Heading"
+            widget: "string"
+            required: true
+          - name: "content"
+            label: "Content"
+            widget: "markdown"
+            buttons: [bold, italic, link, bulleted-list]
+            editor_components: []
+            modes: [rich_text]
+            required: false
+      - name: "links"
+        label: "Button Links"
+        widget: "list"
+        collapsed: false
+        required: false
+        types:
+          - name: "link"
+            label: "Link Button"
+            widget: "object"
+            fields:
+              - name: "content"
+                label: "Button Text"
+                widget: "string"
+                required: true
+              - name: "href"
+                label: "Link Url"
+                widget: "string"
+                required: true
+          - name: "file"
+            label: "File Button"
+            widget: "object"
+            fields:
+              - name: "content"
+                label: "Button Text"
+                widget: "string"
+                required: true
+              - name: "href"
+                label: "File Upload"
+                widget: "file"
+                media_library:
+                  allow_multiple: false
+                  config:
+                    max_file_size: 5000000
+      - name: "sections"
+        label: "Content"
+        widget: "list"
+        collapsed: false
         fields:
           - name: "heading"
             label: "Section Heading"
-            widget: string
-            required: true
-          - name: "open"
-            label: "Section open on page load"
-            widget: "boolean"
-            default: true
-            required: true
-          - name: "section"
-            label: "Section"
+            widget: "string"
+          - name: "blocks"
+            label: "Section Blocks"
             widget: "list"
             collapsed: false
-            required: true
             types:
               - name: "content"
                 label: "Text Block"
@@ -66,7 +287,6 @@ collections:
                     editor_components: []
                     modes: [rich_text]
                     required: false
-
               - name: "images"
                 label: "Image Gallery Block"
                 widget: "object"
@@ -95,72 +315,6 @@ collections:
                       widget: "text"
                       required: false
 
-              - name: "buttonLink"
-                label: "Link Button Block"
-                widget: "object"
-                fields:
-                  - name: "content"
-                    label: "Button Text"
-                    widget: "string"
-                  - name: "href"
-                    label: "Button Url"
-                    widget: "string"
-
-              - name: "buttonFile"
-                label: "File Button Block"
-                widget: "object"
-                fields:
-                  - name: "content"
-                    label: "Button Tet"
-                    widget: "string"
-                  - name: "href"
-                    label: "Document Upload"
-                    widget: "file"
-                    media_library:
-                      allow_multiple: false
-                      config:
-                        max_file_size: 5000000
-
-              - name: "map"
-                label: "Map"
-                widget: "object"
-                fields:
-                  - name: "location"
-                    label: "Map"
-                    widget: "map"
-                  - name: "alt"
-                    label: "Map alt text"
-                    widget: "string"
-                    required: false
-
-              - name: "imagesGrid"
-                label: "Image Grid"
-                widget: "object"
-                fields:
-                  - name: "images"
-                    label: "Images"
-                    label_singular: "Image"
-                    widget: "list"
-                    collapsed: false
-                    min: 1
-                    fields:
-                    - name: "src"
-                      label: "Upload"
-                      widget: "image"
-                      media_library:
-                        allow_multiple: false
-                        config:
-                          max_file_size: 5000000
-                    - name: "alt"
-                      label: "Alt text"
-                      widget: "string"
-                      required: false
-                      hint: "(Accessibility) Alt text should visually describe the image."
-                    - name: "href"
-                      label: "Link"
-                      widget: "string"
-                      required: false
-
   - name: "settings"
     label: "Settings"
     create: false
@@ -185,6 +339,72 @@ collections:
             required: false
             hint: "Default site description displayed by search engines and when sharing."
 
+      - name: "menu"
+        label: "Menu"
+        file: "src/_data/menu.json"
+        fields:
+          - name: "buttonOneContent"
+            label: "Pathway 1 Link Text"
+            widget: "string"
+          - name: "buttonOneHref"
+            label: "Pathway 1 Link Url"
+            widget: "string"
+          - name: "buttonTwoContent"
+            label: "Pathway 1 Link Text"
+            widget: "string"
+          - name: "buttonTwoHref"
+            label: "Pathway 1 Link Url"
+            widget: "string"
+          - name: "content"
+            label: "Menu Main Content"
+            widget: "markdown"
+            buttons: [link, bulleted-list]
+            editor_components: []
+            modes: [rich_text]
+            required: false
+
+      - name: "header"
+        label: "Site Header"
+        file: "src/_data/header.json"
+        fields:
+          - name: "headerLinkContent"
+            label: "Header Link Text"
+            widget: "string"
+            required: false
+          - name: "headerLinkHref"
+            label: "Header Link Url"
+            widget: "string"
+            required: false
+
+      - name: "footer"
+        label: "Site Footer"
+        file: "src/_data/footer.json"
+        fields:
+          - name: "content"
+            label: "Main Footer Content"
+            widget: "text"
+            required: false
+          - name: "links"
+            label: "Footer Links and Socials"
+            label_singular: "Link"
+            widget: "list"
+            collapsed: false
+            required: false
+            max: 5
+            fields:
+              - name: "content"
+                label: "Link Text"
+                widget: "string"
+                required: true
+              - name: "href"
+                label: "Link Url"
+                widget: "string"
+                required: true
+          - name: "copyright"
+            label: "Footer Copyright Text"
+            widget: "string"
+            required: false
+
       - name: "analytics"
         label: "Analytics"
         file: "src/_data/settings/analytics.json"
@@ -201,7 +421,7 @@ collections:
 
       - name: "tags"
         label: "Activity Tags"
-        file: "src/_data/tags.json"
+        file: "src/_data/tags.yml"
         fields:
           - name: "tags"
             label: "Tags"
