@@ -8,11 +8,12 @@ body {
   font-family: sans-serif;
   line-height: var(--line-height);
   color: var(--color--foreground);
-  background: var(--color--background);
 }
 
 main {
-  padding: 0 0.5rem;
+  padding-left: var(--page-margin__left);
+  padding-right: var(--page-margin__right);
+  background: var(--color--background);
 }
 
 img {
