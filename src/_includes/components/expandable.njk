@@ -1,4 +1,4 @@
-<details class="expandable"{% if section.open %} open=""{% endif %}>
+<details id="{{ loop.index }}-{{ section.heading | slug }}" class="expandable"{% if section.open %} open=""{% endif %}>
   <summary class="expandable__summary"><h2 class="expandable__heading">{{ section.heading }}</h2></summary>
   <div class="expandable__wrapper">
     {% for item in section.section %}

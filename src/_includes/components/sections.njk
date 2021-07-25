@@ -1,3 +1,7 @@
 {% for section in sections %}
-  {% include "components/expandable.njk" %}
+  {% if section.type === "title" %}
+    {% include "components/section-heading-large.njk" %}
+  {% elif section.type === "expandable" %}
+    {% include "components/expandable.njk" %}
+  {% endif %}
 {% endfor %}

@@ -1,7 +1,3 @@
-body {
-  counter-reset: section;
-}
-
 .expandable {
   .expandable__summary {
     cursor: pointer;
@@ -31,4 +27,18 @@ body {
       margin-bottom: 3.25rem;
     }
   }
+}
+
+.expandable:only-of-type {
+  .expandable__summary {
+    .expandable__heading {
+      &::before {
+        content: "";
+      }
+    }
+  }
+}
+
+.heading {
+  counter-reset: section;
 }
