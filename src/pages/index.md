@@ -1,9 +1,12 @@
 ---
-title: A Guide to MAKE
+title: Index
 layout: layouts/index.njk
 permalink: /
 sections:
-  - open: true
+  - type: title
+    title: A Guide to MAKE
+  - type: expandable
+    open: true
     heading: Introduction
     section:
       - type: content
@@ -19,7 +22,8 @@ sections:
           * Applying to run an activity – download the proposal form
 
           * Find inspiration in the MAKE Activity Library
-  - open: true
+  - type: expandable
+    open: true
     heading: About MAKE
     section:
       - type: content
@@ -39,7 +43,8 @@ sections:
             caption: Image caption here if needed. Image caption here. © Paul Cochrane
           - src: /media/uploads/make_02_paul-cochrane.jpg
             caption: Image caption here if needed. Image caption here. © Paul Cochrane
-  - open: true
+  - type: expandable
+    open: true
     heading: Who is MAKE for?
     section:
       - type: content
@@ -50,7 +55,8 @@ sections:
 
 
           Whether it’s individuals who live and work locally in Somers Town and St Pancras, students and staff from our neighbours at CSM, or other local organisations, MAKE is a space where people from many different backgrounds can come together to create and learn from each other.
-  - open: true
+  - type: expandable
+    open: true
     section:
       - type: content
         content: >-
@@ -76,7 +82,8 @@ sections:
           - src: /media/uploads/clay-hands.-credit-adam-razvi.jpg
           - src: /media/uploads/191024-biodesign-microscopes-8302.jpg
     heading: What happens at MAKE?
-  - open: true
+  - type: expandable
+    open: true
     heading: Facilities & Equipment
     section:
       - type: content
@@ -123,7 +130,8 @@ sections:
       - type: buttonLink
         content: Request equipment
         href: https://example.com
-  - open: true
+  - type: expandable
+    open: true
     heading: Where is MAKE?
     section:
       - type: content
@@ -156,7 +164,8 @@ sections:
           Ossulston St\
           Somers Town\
           London NW1 1DF](https://goo.gl/maps/5RrvzCs77okyVbTh8)
-  - open: true
+  - type: expandable
+    open: true
     heading: Want to find out more?
     section:
       - type: content
@@ -168,7 +177,8 @@ sections:
       - type: buttonLink
         content: MAKE Instagram
         href: https://www.instagram.com/makeatstorygarden/
-  - open: true
+  - type: expandable
+    open: true
     heading: Legals
     section:
       - type: content
