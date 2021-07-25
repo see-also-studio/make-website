@@ -1,0 +1,51 @@
+.activity-card {
+  .activity-card__metadata {
+    font-size: var(--font-size--small);
+
+    border-radius: 1.1em;
+    border: var(--border);
+    padding: 1.25em 1.1em;
+
+    .activity-card__subheading {
+
+      &:not(:first-child) {
+        margin-top: calc(var(--line-height) * 1em);
+      }
+    }
+
+    .activity-card__subheading + * {
+      margin-top: 0;
+    }
+
+    > *:last-child {
+      margin-bottom: calc(var(--line-height) * 2em);
+    }
+  }
+
+  @include breakpoint(medium) {
+    --gap: 8%;
+
+    display: grid;
+    grid-template-columns: auto 65%;
+    grid-template-rows: auto auto 1fr;
+    column-gap: var(--gap);
+    grid-template-areas: "header header" "meta content" "links content";
+    align-items: start;
+
+    .activity-card__header {
+      grid-area: header;
+    }
+
+    .activity-card__metadata {
+      grid-area: meta;
+    }
+
+    .activity-card__links {
+      grid-area: links;
+    }
+
+    .activity-card__content {
+      grid-area: content;
+    }
+  }
+}

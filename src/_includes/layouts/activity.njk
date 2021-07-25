@@ -1,0 +1,39 @@
+---
+layout: "layouts/base.njk"
+type: "activity"
+---
+
+<main id="main">
+  <article class="activity-card">
+    <header class="activity-card__header">
+      <h1 class="activity-card__heading heading heading--large">{{ title }}</h1>
+      <div class="activity-card__description">{{ description }}</div>
+    </header>
+
+    <aside class="activity-card__metadata">
+      {% for item in activityMeta %}
+      <h2 class="activity-card__subheading">{{ item.heading }}</h2>
+      {{ item.content | markdown | safe }}
+      {% endfor %}
+    </aside>
+
+    <section class="activity-card__content">
+      {% for section in sections %}
+      <h2 class="activity-card__subheading">{{ section.heading }}</h2>
+      {% for item in section.blocks %}
+        {% if item.type === "content" %}
+          {% include "components/blocks/text.njk" %}
+        {% elif item.type === "images" %}
+          {% include "components/blocks/image-gallery.njk" %}
+        {% endif %}
+      {% endfor %}
+      {% endfor %}
+    </section>
+
+    <aside class="activity-card__links">
+      {% for item in links %}
+        <a class="activity-card__link button--rounded" href="{{ item.href }}" >{{ item.content }}</a>
+      {% endfor %}
+    </aside>
+  </article>
+</main>
