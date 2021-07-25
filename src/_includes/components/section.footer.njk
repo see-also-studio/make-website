@@ -1,0 +1,9 @@
+<footer class="footer">
+  <div class="footer__content">{{ footer.content | parselinebreak | safe }}</div>
+  <ul class="footer__links">
+    {% for item in footer.links %}
+    <li class="footer__link"><a href="{{ item.href }}" target="_blank">{{ item.content }}</a></li>
+    {% endfor %}
+  </ul>
+  <div class="footer__copyright">{{ footer.copyright | safe | parsecurrentyear }}</div>
+</footer>

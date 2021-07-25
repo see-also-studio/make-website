@@ -57,6 +57,18 @@ module.exports = function(eleventyConfig) {
   });
 
 
+  // Add shortcode and filter to output current year
+  eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`);
+  eleventyConfig.addFilter('parsecurrentyear', function(value) {
+    return value.replace('{{currentYear}}', `${new Date().getFullYear()}`);
+  });
+
+  // Filter to parse json linebreaks
+  eleventyConfig.addFilter('parselinebreak', function(value) {
+    return value.split('\n').join('<br>');
+  });
+
+
   // Folder passthroughs
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/admin");

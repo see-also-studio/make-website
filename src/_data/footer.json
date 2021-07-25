@@ -10,5 +10,5 @@
       "href": "https://www.instagram.com/makeatstorygarden/"
     }
   ],
-  "copyright": "All content © MAKE & The Living Centre, {% year %} unless noted."
+  "copyright": "All content © MAKE & The Living Centre, {{currentYear}} unless noted."
 }

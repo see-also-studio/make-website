@@ -8,12 +8,19 @@ body {
   font-family: sans-serif;
   line-height: var(--line-height);
   color: var(--color--foreground);
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
+  position: relative;
   padding-left: var(--page-margin__left);
   padding-right: var(--page-margin__right);
   background: var(--color--background);
+  flex-grow: 10;
+  z-index: 10;
 }
 
 img {
