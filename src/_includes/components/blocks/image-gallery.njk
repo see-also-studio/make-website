@@ -5,7 +5,12 @@
   {% endif %}
     {% for image in item.images %}
     <figure class="gallery__item swiper-slide">
-      <img src="{{ image.src }}" alt="{{ image.alt }}" loading="lazy">
+      <img
+        sizes="{{ helper.sizes(galleryType) }}"
+        srcset="{{ helper.srcset(image.src, galleryType) }}"
+        src="{{ image.src }}"
+        alt="{{ image.alt }}"
+        loading="lazy">
       {% if image.caption %}
       <figcaption>{{ image.caption }}</figcaption>
       {% endif %}
