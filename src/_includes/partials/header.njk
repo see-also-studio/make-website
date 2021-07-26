@@ -1,3 +1,20 @@
-<header>
-  <h1 class="site-title"><a href="/">{{ metadata.title }}</a></h1>
+<header class="header">
+  <h1 class="header__logo site-title"><a href="/">{% include "components/logo.njk" %}</a></h1>
+  <a class="header__partner-link" href="{{ header.headerLinkHref }}" target="_blank">{{ header.headerLinkContent }}</a>
+  <div class="header__menu">
+    <button class="header__menu-button">Menu</button>
+    <navigation class="header__nav">
+      {{ menu.content | markdown | safe }}
+      <ul class="content-mobile">
+        <li><a href="{{ menu.buttonOneHref }}">{{ menu.buttonOneContent }}</a></li>
+        <li><a href="{{ menu.buttonTwoHref }}">{{ menu.buttonTwoContent }}</a></li>
+      </ul>
+    </navigation>
+  </div>
+  <navigation class="header__pathways content-desktop">
+    <ul class="header__pathways-wrapper">
+      <li class="header__pathway"><a href="{{ menu.buttonOneHref }}">{{ menu.buttonOneContent }}</a></li>
+      <li class="header__pathway"><a href="{{ menu.buttonTwoHref }}">{{ menu.buttonTwoContent }}</a></li>
+    </ul>
+  </navigation>
 </header>
