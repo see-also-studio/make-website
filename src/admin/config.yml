@@ -421,7 +421,7 @@ collections:
 
       - name: "tags"
         label: "Activity Tags"
-        file: "src/_data/tags.yml"
+        file: "src/_data/activityTags.json"
         fields:
           - name: "tags"
             label: "Tags"
