@@ -203,7 +203,7 @@ collections:
         widget: "text"
         required: false
         hint: "Brief text description of the activity."
-      - name: "tags"
+      - name: "filterTags"
         label: "Activity Tags"
         widget: "relation"
         collection: "settings"

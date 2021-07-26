@@ -3,7 +3,7 @@ title: Clay Social
 layout: "layouts/activity.njk"
 permalink: "activities/{{ title | slug }}/"
 description: Learn a craft and connect with others
-tags:
+filterTags:
   - Crafts and Arts
   - Clay
   - Materials
