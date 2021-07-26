@@ -1,5 +1,5 @@
 .header {
-  navigation {
+  nav {
     a {
       text-decoration: none;
     }
@@ -14,7 +14,7 @@
   }
 }
 
-.header__menu {
+.menu {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -22,12 +22,13 @@
   width: max-content;
   z-index: 50;
   pointer-events: none;
+  overflow: visible !important; // So drop shadow doesn't dissappear
 
   > * {
     pointer-events: auto;
   }
 
-  .header__menu-button {
+  .menu__button {
     display: block;
     position: relative;
     filter: var(--drop-shadow);
@@ -37,7 +38,7 @@
 
   }
 
-  .header__nav {
+  .menu__nav {
     display: block;
     background: var(--color--alt2);
     padding-left: var(--page-margin__left);
@@ -47,6 +48,10 @@
     width: 17em;
     max-width: 100%;
     filter: var(--drop-shadow);
+
+    &.menu__nav--hidden {
+      display: none;
+    }
 
     ul {
       li {
@@ -65,6 +70,10 @@
           margin-top: calc(0.5em * var(--line-height));
           transform: translateY(-50%);
         }
+      }
+
+      &:last-of-type {
+        margin-top: calc(var(--line-height) * 1em);
       }
     }
   }
