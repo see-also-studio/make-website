@@ -1,5 +1,5 @@
 ---
-title: Existing Activities and Workshops
+title: Explore existing activities
 layout: layouts/activity-library.njk
 permalink: "{{ title | slug }}/"
 description: ""
