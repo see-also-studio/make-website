@@ -5,14 +5,12 @@
 
 @include breakpoint(medium) {
   .content-mobile {
-    display: none;
+    display: none !important;
   }
 }
 
-.content-desktop {
-  display: none;
-
-  @include breakpoint(medium) {
-    display: block;
+@include breakpoint(untilMedium) {
+  .content-desktop {
+    display: none !important;
   }
 }
