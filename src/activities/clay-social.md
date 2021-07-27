@@ -8,6 +8,7 @@ filterTags:
   - Clay
   - Materials
   - Woodworking
+  - Handtools
 activityMeta:
   - heading: Participants
     content: |-
