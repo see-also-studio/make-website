@@ -22,8 +22,7 @@ main {
   flex-grow: 10;
   z-index: 10;
   display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
+  grid-template-columns: 100%;
   box-shadow: var(--drop-shadow);
 }
 
