@@ -35,19 +35,33 @@ main.activity-card {
   .activity-card__wrapper {
     padding-left: var(--page-margin__left);
     padding-right: var(--page-margin__right);
+    padding-bottom: 3.25rem;
     background: var(--color--background--alt);
+
+    .activity-card__header {
+      .activity-card__heading {
+        margin-bottom: 0;
+      }
+
+      .activity-card__description {
+        font-size: var(--font-size--small);
+        margin-top: calc(1rem * var(--line-height));
+        margin-bottom: calc(1rem * var(--line-height));
+        min-height: calc(3em * var(--line-height));
+      }
+    }
 
     .activity-card__metadata {
       font-size: var(--font-size--small);
 
       border-radius: 1.1em;
       border: var(--border);
-      padding: 1.25em 1.1em;
+      padding: 0.8rem 0.65rem;
 
       .activity-card__subheading {
 
         &:not(:first-child) {
-          margin-top: calc(var(--line-height) * 1em);
+          margin-top: calc(var(--line-height) * 1.35em);
         }
       }
 
@@ -58,6 +72,21 @@ main.activity-card {
       > *:last-child {
         margin-bottom: calc(var(--line-height) * 2em);
       }
+    }
+
+    .activity-card__content {
+      margin-top: 0.8rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .activity-card__links {
+      margin-top: 1.75rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .activity-card__subheading {
+      text-transform: uppercase;
+      font-size: 73%;
     }
 
     @include breakpoint(medium) {
