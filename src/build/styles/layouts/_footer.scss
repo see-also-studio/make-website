@@ -8,8 +8,9 @@
   padding-right: var(--page-margin__right);
   background-image: url("/assets/images/footer-bg.svg");
   background-repeat: repeat;
-  background-size: 1.16em;
+  background-size: 0.5em;
   background-position: -0.2em -0.2em;
+  border-top: var(--border);
 
   @include breakpoint(medium) {
     > * {
@@ -52,4 +53,9 @@
 
 * + .footer__copyright {
   margin-top: calc(var(--line-height) * 1em);
+}
+
+// Don't show footer on activity-card pages
+main.activity-card + footer {
+  display: none;
 }
