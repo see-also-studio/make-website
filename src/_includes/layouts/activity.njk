@@ -11,6 +11,9 @@ type: "activity"
     </header>
 
     <aside class="activity-card__metadata">
+      <h2 class="activity-card__subheading">Tags</h2>
+      {% set comma = joiner() %}
+      <p>{% for tag in filterTags %}{{ comma() }} {{ tag }}{% endfor %}</p>
       {% for item in activityMeta %}
       <h2 class="activity-card__subheading">{{ item.heading }}</h2>
       {{ item.content | markdown | safe }}
