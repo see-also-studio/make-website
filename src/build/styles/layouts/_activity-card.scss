@@ -3,6 +3,13 @@ main.activity-card {
   padding: 0;
   z-index: 110;
 
+  .activity-card__close {
+    position: fixed;
+    z-index: 50;
+    bottom: 0.75rem;
+    right: var(--page-margin__right);
+  }
+
   .activity-card__holes {
     display: flex;
     flex-wrap: nowrap;
