@@ -3,8 +3,13 @@ layout: "layouts/base.njk"
 type: "activity"
 ---
 
-<main id="main">
-  <article class="activity-card">
+<main id="main" class="activity-card">
+  <div class="activity-card__holes">
+    <div class="activity-card__hole"></div>
+    <div class="activity-card__hole"></div>
+    <div class="activity-card__hole"></div>
+  </div>
+  <article class="activity-card__wrapper">
     <header class="activity-card__header">
       <h1 class="activity-card__heading heading heading--large">{{ title }}</h1>
       <div class="activity-card__description">{{ description }}</div>
