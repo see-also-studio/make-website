@@ -4,7 +4,7 @@ module.exports = {
     const seperator = '—';
     let title = '';
     if (pageUrl === '/') {
-      title = metadata.title + (metadata.tagline ? ' ' + seperator + ' ' + metadata.tagline : '');
+      title = metadata.title + (metadata.tagline ? ' at ' + metadata.tagline : '');
     } else {
       title = pageTitle + (pageTitle !== metadata.title ? ' ' + seperator + ' ' + metadata.title : '');
     }
