@@ -39,7 +39,7 @@
   }
 
   .activities__wrapper {
-    --gap: 1rem;
+    --gap: 1.8rem;
 
     min-height: 50vh;
     margin-top: 1rem;
@@ -60,7 +60,7 @@
     align-items: center;
     justify-content: center;
     float: left;
-    margin-bottom: var(--gap);
+    margin-bottom: calc(var(--gap) * 1.15);
 
     .activities__heading {
       font-size: var(--font-size--heading);
