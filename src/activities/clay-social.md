@@ -1,14 +1,13 @@
 ---
 title: Clay Social
-layout: "layouts/activity.njk"
-permalink: "activities/{{ title | slug }}/"
+layout: layouts/activity.njk
+permalink: activities/{{ title | slug }}/
 description: Learn a craft and connect with others
 filterTags:
   - Crafts and Arts
   - Clay
   - Materials
   - Woodworking
-  - Handtools
 activityMeta:
   - heading: Participants
     content: |-
