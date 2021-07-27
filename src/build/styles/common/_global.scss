@@ -8,6 +8,7 @@ body {
   font-family: sans-serif;
   line-height: var(--line-height);
   color: var(--color--foreground);
+  background: var(--color--background);
 
   display: flex;
   flex-direction: column;
@@ -24,6 +25,10 @@ main {
   display: grid;
   grid-template-columns: 100%;
   box-shadow: var(--drop-shadow);
+
+  &:not(.activity-card) {
+    padding-top: var(--page-margin__top);
+  }
 }
 
 img {

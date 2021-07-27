@@ -1,7 +1,23 @@
 .header {
+  min-height: 3rem;
+
   nav {
     a {
       text-decoration: none;
+    }
+  }
+
+  .header__logo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 8rem;
+    padding: var(--page-margin__left);
+    z-index: 50;
+
+    a {
+      margin: 0;
+      padding: 0;
     }
   }
 
@@ -20,7 +36,7 @@
   left: 0;
   font-size: var(--font-size--small);
   width: max-content;
-  z-index: 50;
+  z-index: 100;
   pointer-events: none;
   overflow: visible !important; // So drop shadow doesn't dissappear
 
@@ -85,7 +101,7 @@
   bottom: 0;
   right: 0;
   font-size: var(--font-size--small);
-  z-index: 50;
+  z-index: 100;
 
   .header__pathways-wrapper {
     display: flex;
