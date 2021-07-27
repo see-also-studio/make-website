@@ -39,6 +39,7 @@
   z-index: 100;
   pointer-events: none;
   overflow: visible !important; // So drop shadow doesn't dissappear
+  max-width: 100%;
 
   > * {
     pointer-events: auto;
@@ -60,7 +61,6 @@
     padding-left: var(--page-margin__left);
     padding-top: calc(1em * var(--line-height));
     padding-bottom: calc(1em * var(--line-height));
-    padding-right: 10%;
     width: 17em;
     max-width: 100%;
     box-shadow: var(--drop-shadow);
@@ -92,6 +92,10 @@
         margin-top: calc(var(--line-height) * 1em);
       }
     }
+  }
+
+  @include breakpoint(untilMedium) {
+    font-size: 1rem;
   }
 }
 
