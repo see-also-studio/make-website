@@ -1,8 +1,9 @@
 ---
-title: Test Activity 1
+title: Example 3
 layout: layouts/activity.njk
 permalink: activities/{{ title | slug }}/
 filterTags:
-  - Artists
-  - Creativity
+  - Materials
+  - Woodworking
+  - Handtools
 ---
