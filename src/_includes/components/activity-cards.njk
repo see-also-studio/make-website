@@ -1,0 +1,18 @@
+<section id="activity-cards" class="activities">
+  <ul class="activities__filters">
+    <button class="activities__filter--toggle button--rounded">Hide filters</button>
+    {% for item in activityTags.tags %}
+    <button class="activities__filter button--rounded" data-filter="filter--{{ item | slug }}">{{ item }}</button>
+    {% endfor %}
+  </ul>
+  <div class="activities__wrapper">
+    <div class="card-sizer"></div>
+    <div class="gutter-sizer"></div>
+    {% for item in collections.activity %}
+    {% set space = joiner(" ") %}
+    <article class="activities__card {% for tag in item.data.filterTags -%}{{- space() -}}filter--{{ tag | slug }}{%- endfor -%}" data-sort="{{ item.data.title | slug }}">
+      <h2 class="activities__heading"><a href="/activities/{{ item.data.title | slug }}/">Activity Card: {{ item.data.title }}</a></h2>
+    </article>
+    {% endfor %}
+  </div>
+</section>

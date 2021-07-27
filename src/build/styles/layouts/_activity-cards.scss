@@ -1,0 +1,73 @@
+.activities {
+  min-height: 50vh;
+
+  .activities__filters {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.9rem 1rem;
+    position: sticky;
+    top: 1.85rem;
+    z-index: 50;
+
+    .activities__filter {
+      margin: 0;
+      background: var(--color--background);
+      transition-duration: 200ms;
+      transition-property: background;
+
+      &.activities__filter--active {
+        background: var(--color--alt4);
+        order: 0;
+      }
+    }
+
+    .activities__filter--toggle {
+      background: var(--color--alt1);
+      order: -1;
+    }
+
+    &.activities__filter--hidden {
+      .activities__filter.activities__filter--active {
+        order: -1;
+      }
+
+      .activities__filter:not(.activities__filter--active) {
+        visibility: hidden;
+        pointer-events: none;
+      }
+    }
+  }
+
+  .activities__wrapper {
+    --gap: 1rem;
+
+    margin-top: 1rem;
+    margin-bottom: 3.25rem;
+
+    .gutter-sizer {
+      width: var(--gap);
+    }
+  }
+
+  .activities__card {
+    width: calc(50% - var(--gap) / 2);
+    aspect-ratio: 10 / 11;
+    border: var(--border);
+    border-radius: 0.75rem;
+    background: var(--color--background--alt);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    margin-bottom: var(--gap);
+
+    .activities__heading {
+      font-size: var(--font-size--heading);
+      text-align: center;
+      width: 60%;
+      transform: rotate(-6deg);
+    }
+  }
+}
