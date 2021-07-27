@@ -21,8 +21,10 @@ main {
   background: var(--color--background);
   flex-grow: 10;
   z-index: 10;
-  overflow: hidden;
   filter: var(--drop-shadow);
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
 }
 
 img {
