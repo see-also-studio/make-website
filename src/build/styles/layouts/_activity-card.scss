@@ -51,7 +51,7 @@ main.activity-card {
       }
 
       .activity-card__description {
-        font-size: var(--font-size--small);
+        //@at-root: var(--font-size--small);
         margin-top: calc(1rem * var(--line-height));
         margin-bottom: calc(1rem * var(--line-height));
         min-height: calc(3em * var(--line-height));
