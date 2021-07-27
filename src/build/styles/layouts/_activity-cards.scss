@@ -1,6 +1,4 @@
 .activities {
-  min-height: 50vh;
-
   .activities__filters {
     display: flex;
     flex-direction: row;
@@ -43,6 +41,7 @@
   .activities__wrapper {
     --gap: 1rem;
 
+    min-height: 50vh;
     margin-top: 1rem;
     margin-bottom: 3.25rem;
 
