@@ -31,7 +31,7 @@
   .menu__button {
     display: block;
     position: relative;
-    filter: var(--drop-shadow);
+    box-shadow: var(--drop-shadow);
     background: var(--color--alt2);
     padding: 0.55em calc(var(--page-margin__left) + 0.7em);
     z-index: 10;
@@ -47,7 +47,7 @@
     padding-right: 10%;
     width: 17em;
     max-width: 100%;
-    filter: var(--drop-shadow);
+    box-shadow: var(--drop-shadow);
 
     &.menu__nav--hidden {
       display: none;
@@ -96,7 +96,7 @@
     position: relative;
     white-space: nowrap;
     background: var(--color--alt3);
-    filter: var(--drop-shadow);
+    box-shadow: var(--drop-shadow);
     padding: var(--page-margin__left);
 
     &:first-child {
