@@ -11,7 +11,7 @@
     {% for item in collections.activity %}
     {% set space = joiner(" ") %}
     <article class="activities__card {% for tag in item.data.filterTags -%}{{- space() -}}filter--{{ tag | slug }}{%- endfor -%}" data-sort="{{ item.data.title | slug }}">
-      <h2 class="activities__heading"><a href="/activities/{{ item.data.title | slug }}/">Activity Card: {{ item.data.title }}</a></h2>
+      <a href="/activities/{{ item.data.title | slug }}/"><h2 class="activities__heading">Activity Card: {{ item.data.title }}</h2></a>
     </article>
     {% endfor %}
   </div>
