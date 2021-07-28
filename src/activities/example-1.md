@@ -8,25 +8,25 @@ filterTags:
 activityMeta:
   - heading: Participants
     content: |-
-      * Makers- all levels of experience
-      * Teenagers/Youth
-      * Students/Schools
-      * Community Organisations- team building
+      * Makers: all levels of experience
+      * Teenagers/youth
+      * Students/schools
+      * Community organisations: team building
       * Local Service Providers
   - heading: Materials
     content: |-
       * Household items
-      * Scissors, Pens & Glue
-      * Found Materials
+      * Scissors, pens & glue
+      * Found materials
   - content: |-
       * Access to internet
-      * Smart phone or Computer
+      * Smart phone or computer
     heading: Equipment and tools
   - heading: Timeline
     content: 3 times a week; 1 hour sessions
   - content: |-
       * Artist Facilitator with online workshop leading skills
-      * Online Moderator- Trained in mental health first aider
+      * Online Moderator: trained in mental health first aider
     heading: Facilitators, staff requirements, skills
 links:
   - type: file
