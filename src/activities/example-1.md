@@ -36,17 +36,6 @@ links:
     content: Workshop images
     href: /media/uploads/test.pdf
 sections:
-  - heading: About
-    blocks:
-      - type: content
-        content: MAKE Social is a series of online workshops to connect, share ideas and
-          improve craft skills in the home. This ongoing programme supports the
-          community of makers, residents and associates of MAKE who may not
-          access the physical site due to mobility issues, distance or under
-          lockdowns as experienced during covid19. Access to makers homes
-          through remote learning can improve confidence and mental wellbeing
-          through guided discussion and support in realising their creative
-          ideas.
   - blocks:
       - type: images
         images:
@@ -58,4 +47,15 @@ sections:
           - src: /media/uploads/screenshot-2020-04-27-at-14.48.51.png
           - src: /media/uploads/screenshot-2020-05-01-at-14.31.45.png
     heading: Images
+  - heading: About
+    blocks:
+      - type: content
+        content: MAKE Social is a series of online workshops to connect, share ideas and
+          improve craft skills in the home. This ongoing programme supports the
+          community of makers, residents and associates of MAKE who may not
+          access the physical site due to mobility issues, distance or under
+          lockdowns as experienced during covid19. Access to makers homes
+          through remote learning can improve confidence and mental wellbeing
+          through guided discussion and support in realising their creative
+          ideas.
 ---
