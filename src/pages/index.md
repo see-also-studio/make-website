@@ -19,7 +19,7 @@ sections:
 
           * How to access the studios and resources
 
-          * Applying to run an activity – download the proposal form
+          * Applying to run an activity and download the proposal form
 
           * Find inspiration in the MAKE Activity Library
   - type: expandable
@@ -29,7 +29,7 @@ sections:
       - type: content
         content: >-
           Hidden away among the beanstalks and leafy greens of the Story Garden
-          in Camden, MAKE is a community  studio where you can explore creative
+          in Camden, MAKE is a community studio where you can explore creative
           collaboration and projects by the local community. MAKE embraces the
           skills and talents of people who live work and study in Somers Town
           and St Pancras as well as the wider Camden area.
@@ -40,18 +40,18 @@ sections:
         images:
           - src: /media/uploads/make_01_paul-cochrane.jpg
             alt: ""
-            caption: Image caption here if needed. Image caption here. © Paul Cochrane
+            caption: Image © Paul Cochrane
           - src: /media/uploads/make_02_paul-cochrane.jpg
-            caption: Image caption here if needed. Image caption here. © Paul Cochrane
+            caption: Image © Paul Cochrane
   - type: expandable
     open: true
     heading: Who is MAKE for?
     section:
       - type: content
         content: >-
-          MAKE brings together lots of different groups of people from
-          our  local communities, with a shared focus on creating,making and
-          sharing ideas.
+          MAKE brings together lots of different groups of people from our local
+          communities, with a shared focus on creating, making and sharing
+          ideas.
 
 
           Whether it’s individuals who live and work locally in Somers Town and St Pancras, students and staff from our neighbours at CSM, or other local organisations, MAKE is a space where people from many different backgrounds can come together to create and learn from each other.
@@ -73,14 +73,15 @@ sections:
       - type: images
         images:
           - src: /media/uploads/joy-in-weaving-image-credit-joygun-nehar.jpg
+            caption: "'Joy in Weaving' © Joygun Nehar"
           - src: /media/uploads/fire-sculpture-prototyping1.jpeg
+            caption: Fire sculpture prototyping
           - src: /media/uploads/printing-2-busy-hands.jpg
-            caption: The quick brown fox jumps over the lazy dog. The quick brown fox jumps
-              over the lazy dog. The quick brown fox jumps over the lazy dog.
-              The quick brown fox jumps over the lazy dog. The quick brown fox
-              jumps over the lazy dog.
+            caption: Busy hands printing
           - src: /media/uploads/clay-hands.-credit-adam-razvi.jpg
+            caption: Clay hands © Adam Razvi
           - src: /media/uploads/191024-biodesign-microscopes-8302.jpg
+            caption: Biodesign microscopes
     heading: What happens at MAKE?
   - type: expandable
     open: true
