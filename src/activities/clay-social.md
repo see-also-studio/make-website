@@ -49,13 +49,20 @@ sections:
     blocks:
       - type: images
         images:
-          - src: /media/uploads/joy-in-weaving-image-credit-joygun-nehar.jpg
-          - src: /media/uploads/fire-sculpture-prototyping1.jpeg
-          - src: /media/uploads/printing-2-busy-hands.jpg
-            caption: The quick brown fox jumps over the lazy dog. The quick brown fox jumps
-              over the lazy dog. The quick brown fox jumps over the lazy dog.
-          - src: /media/uploads/clay-hands.-credit-adam-razvi.jpg
-          - src: /media/uploads/191024-biodesign-microscopes-8302.jpg
+          - src: /media/uploads/dsc06140.jpg
+            caption: Image © Maria Fidelis
+          - src: /media/uploads/dsc06125.jpg
+            caption: Image © Maria Fidelis
+          - src: /media/uploads/dsc06147.jpg
+            caption: Image © Maria Fidelis
+          - src: /media/uploads/dsc06153.jpg
+            caption: Image © Maria Fidelis
+          - src: /media/uploads/raku-kiln.jpg
+            caption: Image © Maria Fidelis
+          - src: /media/uploads/mara-fidelis-school.jpg
+            caption: Image © Maria Fidelis
+          - src: /media/uploads/img_20201217_105842.jpg
+            caption: Image © Maria Fidelis
   - heading: About
     blocks:
       - type: content
