@@ -73,13 +73,13 @@ sections:
       - type: images
         images:
           - src: /media/uploads/joy-in-weaving-image-credit-joygun-nehar.jpg
-            caption: "'Joy in Weaving' © Joygun Nehar"
+            caption: Joygun Nehar – Joy in Weaving
           - src: /media/uploads/fire-sculpture-prototyping1.jpeg
             caption: Fire sculpture prototyping
           - src: /media/uploads/printing-2-busy-hands.jpg
             caption: Busy hands printing
           - src: /media/uploads/clay-hands.-credit-adam-razvi.jpg
-            caption: Clay hands © Adam Razvi
+            caption: Adam Razvi – Clay hands
           - src: /media/uploads/191024-biodesign-microscopes-8302.jpg
             caption: Biodesign microscopes
     heading: What happens at MAKE?
