@@ -40,10 +40,15 @@ sections:
       - type: images
         images:
           - src: /media/uploads/make-social_general-image.jpg
+            caption: MAKE Social
           - src: /media/uploads/make-social_poster_070520.jpg
+            alt: MAKE Social poster
           - src: /media/uploads/mark-laban_onion-kaleidoscope5.jpg
+            caption: Onion Kaleidoscope © Mark Laban
           - src: /media/uploads/mark-laban_onion-kaleidoscope7.jpeg
+            caption: Onion Kaleidoscope © Mark Laban
           - src: /media/uploads/paul-wolf_make-tea-not-war_yellow1.jpg
+            caption: Make Tea Not War © Paul Wolf
           - src: /media/uploads/screenshot-2020-04-27-at-14.48.51.png
           - src: /media/uploads/screenshot-2020-05-01-at-14.31.45.png
     heading: Images
