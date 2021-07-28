@@ -151,9 +151,7 @@ sections:
       - type: images
         images:
           - src: /media/uploads/above-shot.jpg
-            caption: |-
-              Image caption here if needed. Image caption here.
-              All photographs © Artist Name.
+            caption: ""
       - type: content
         content: "Map:"
       - type: map
