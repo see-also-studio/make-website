@@ -47,4 +47,15 @@ sections:
           through remote learning can improve confidence and mental wellbeing
           through guided discussion and support in realising their creative
           ideas.
+  - blocks:
+      - type: images
+        images:
+          - src: /media/uploads/make-social_general-image.jpg
+          - src: /media/uploads/make-social_poster_070520.jpg
+          - src: /media/uploads/mark-laban_onion-kaleidoscope5.jpg
+          - src: /media/uploads/mark-laban_onion-kaleidoscope7.jpeg
+          - src: /media/uploads/paul-wolf_make-tea-not-war_yellow1.jpg
+          - src: /media/uploads/screenshot-2020-04-27-at-14.48.51.png
+          - src: /media/uploads/screenshot-2020-05-01-at-14.31.45.png
+    heading: Images
 ---
