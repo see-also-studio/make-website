@@ -18,7 +18,6 @@
 
   onClick(e) {
     e.preventDefault();
-    console.log('menu click');
     this.el.style.overflow = 'hidden';
     if (this.isClosing || !this.el.open) {
       this.open();
@@ -28,7 +27,6 @@
   }
 
   close() {
-    console.log('menu close start');
     this.isClosing = true;
 
     const startHeight = this.el.offsetHeight + 'px';
@@ -50,7 +48,6 @@
   }
 
   open() {
-    console.log('menu open start');
     this.el.style.height = this.el.offsetHeight + 'px';
     this.el.open = true;
     this.nav.classList.remove('menu__nav--hidden');
@@ -78,7 +75,6 @@
   }
 
   onAnimationFinish(open) {
-    console.log('menu animation finished');
     this.el.open = open;
     this.animation = null;
     this.isClosing = false;
