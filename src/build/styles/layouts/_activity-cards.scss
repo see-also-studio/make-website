@@ -1,5 +1,6 @@
 .activities {
   .activities__filters {
+    font-size: var(--font-size--small);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -70,6 +71,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      text-decoration: none;
     }
 
     .activities__heading {
@@ -80,10 +82,6 @@
 
       @include breakpoint(medium) {
         width: 60%;
-      }
-
-      a {
-        text-decoration: none;
       }
     }
   }
