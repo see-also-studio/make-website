@@ -3,10 +3,9 @@
 
   .header__logo {
     position: fixed;
-    top: 0;
-    right: 0;
+    top: var(--page-margin__left);
+    right: var(--page-margin__left);
     width: 8rem;
-    padding: var(--page-margin__left);
     z-index: 50;
 
     a {
