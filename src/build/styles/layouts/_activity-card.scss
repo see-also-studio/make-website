@@ -95,6 +95,7 @@ main.activity-card {
     .activity-card__subheading {
       text-transform: uppercase;
       font-size: 73%;
+      margin-bottom: 0.2em;
     }
 
     @include breakpoint(medium) {
