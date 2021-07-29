@@ -4,6 +4,7 @@
 
     .expandable__heading {
       font-size: var(--font-size--heading);
+      line-height: 1.2;
 
       &::before {
         counter-increment: section;
