@@ -8,6 +8,7 @@
     gap: 0.9rem 1rem;
     position: sticky;
     top: 1.85rem;
+    pointer-events: none;
     z-index: 70;
 
     .activities__filter {
