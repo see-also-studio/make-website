@@ -114,6 +114,14 @@ input {
 */
 details > summary {
   list-style: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: auto;
+  }
 }
 
 details > summary::-webkit-details-marker,
