@@ -6,6 +6,10 @@ let iso = new Isotope( elem, {
   fitRows: {
     gutter: '.gutter-sizer',
   },
+  getSortData: {
+    name: '[data-sort]',
+  },
+  sortBy: 'name',
 });
 
 // Filters
