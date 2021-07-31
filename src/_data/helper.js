@@ -40,6 +40,22 @@ module.exports = {
     return string;
   },
 
+  getUsedTags(currentTags, newTags) {
+    newTags.forEach(function(current) {
+      if (!currentTags.includes(current)) {
+        currentTags.push(current)
+      }
+    });
+    return currentTags;
+  },
+
+  orderTags(orderedTags, usedTags) {
+    orderedTags = orderedTags.filter(function(tag) {
+      return usedTags.includes(tag);
+    });
+    return orderedTags;
+  },
+
   srcset(src, type) {
     let string = '';
 

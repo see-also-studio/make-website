@@ -1,7 +1,12 @@
+{% set usedTags = [] %}
+{% for item in collections.activity %}
+  {% set usedTags = helper.getUsedTags(usedTags, item.data.filterTags) %}
+{% endfor %}
+{% set usedTags = helper.orderTags(activityTags.tags, usedTags) %}
 <section id="activity-cards" class="activities">
   <ul class="activities__filters">
     <button class="activities__filter--toggle button--rounded">Hide filters</button>
-    {% for item in activityTags.tags %}
+    {% for item in usedTags %}
     <button class="activities__filter button--rounded" data-filter="filter--{{ item | slug }}">{{ item }}</button>
     {% endfor %}
   </ul>

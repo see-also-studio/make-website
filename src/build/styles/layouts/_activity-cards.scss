@@ -26,6 +26,7 @@
     .activities__filter--toggle {
       background: var(--color--alt1);
       order: -1;
+      min-width: 7.8em;
     }
 
     &.activities__filter--hidden {
