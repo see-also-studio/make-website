@@ -15,7 +15,7 @@
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   {% include "partials/analytics/google.njk" %}
 </head>
-<body>
+<body{% if isHome %} class="page-index"{% endif %}>
   {% include "partials/header.njk" %}
   {{ content | safe }}
   {% include "partials/footer.njk" %}

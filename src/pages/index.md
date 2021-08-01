@@ -1,7 +1,8 @@
 ---
 title: Index
-layout: layouts/index.njk
+layout: layouts/page.njk
 permalink: /
+isHome: true
 sections:
   - type: title
     title: A Guide to MAKE
