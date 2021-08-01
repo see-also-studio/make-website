@@ -115,12 +115,15 @@ input {
 details > summary {
   list-style: none;
 
-  &:focus {
+  &:focus:not(:focus-visible) {
     outline: none;
   }
 
-  &:focus-visible {
-    outline: auto;
+  // Safari currently doesn't support :focus-visible
+  @supports #{'\not selector(*:focus-visible)'} {
+    &:focus {
+      outline: none;
+    }
   }
 }
 

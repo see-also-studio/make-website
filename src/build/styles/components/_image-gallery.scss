@@ -17,6 +17,10 @@
       aspect-ratio: 5 / 3.2;
       object-fit: contain;
       object-position: center bottom;
+
+      @supports #{'\not (aspect-ratio: 5 / 3.2)'} {
+        max-height: 15.6em;
+      }
     }
   }
 
