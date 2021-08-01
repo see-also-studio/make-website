@@ -1,6 +1,6 @@
 // Init layout
 const elem = document.querySelector('.activities__wrapper');
-let iso = new Isotope( elem, {
+let iso = elem ? new Isotope( elem, {
   itemSelector: '.activities__card',
   layoutMode: 'fitRows',
   fitRows: {
@@ -10,7 +10,7 @@ let iso = new Isotope( elem, {
     name: '[data-sort]',
   },
   sortBy: 'name',
-});
+}) : false;
 
 // Filters
 const filterEls = document.querySelectorAll('.activities__filters .activities__filter');
