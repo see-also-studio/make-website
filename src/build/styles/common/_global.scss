@@ -26,7 +26,7 @@ main {
   box-shadow: var(--drop-shadow);
 
   &:not(.activity-card) {
-    padding-top: var(--page-margin__top);
+    padding-top: calc(var(--page-margin__top) + 1.4rem);
 
     & > * {
       &:not(.activities),
