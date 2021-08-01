@@ -15,6 +15,10 @@ body {
   min-height: 100vh;
 }
 
+body.page-index main {
+  --page-margin__top: 3.6rem;
+}
+
 main {
   position: relative;
   padding-left: var(--page-margin__left);
@@ -26,7 +30,7 @@ main {
   box-shadow: var(--drop-shadow);
 
   &:not(.activity-card) {
-    padding-top: calc(var(--page-margin__top) + 1.4rem);
+    padding-top: var(--page-margin__top);
 
     & > * {
       &:not(.activities),
