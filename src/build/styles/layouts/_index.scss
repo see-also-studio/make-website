@@ -23,7 +23,7 @@ body.page-index {
   padding-left: var(--page-margin__left);
   padding-right: var(--page-margin__right);
   height: 100vh;
-  max-height: 55vw;
+  max-height: 125vw;
   z-index: 10;
   overflow: hidden;
 
@@ -32,6 +32,10 @@ body.page-index {
   }
 
   .index-header__logo {
+    @include breakpoint(untilMedium) {
+      --indent: 15;
+    }
+
     width: 100%;
     padding-left: calc(var(--indent) * 1%);
     padding-right: calc(var(--indent) * 1%);
@@ -117,6 +121,13 @@ body.page-index {
       --size: 4.9rem;
       --random-top: 60;
       --random-left: 80;
+    }
+
+    @include breakpoint(untilMedium) {
+      &:nth-child(9),
+      &:nth-child(10) {
+        display: none;
+      }
     }
   }
 }
