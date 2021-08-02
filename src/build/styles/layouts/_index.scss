@@ -25,7 +25,6 @@ body.page-index {
   height: 100vh;
   max-height: 55vw;
   z-index: 10;
-  border-bottom: var(--border);
   overflow: hidden;
 
   &.index-header--hidden {

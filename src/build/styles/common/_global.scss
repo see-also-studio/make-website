@@ -48,6 +48,8 @@ main {
       height: 100%;
       background-color: var(--color--background);
       z-index: 20;
+      border-top: var(--border);
+      border-bottom: var(--border);
     }
   }
 }
