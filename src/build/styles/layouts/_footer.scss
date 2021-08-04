@@ -10,6 +10,7 @@
   background-repeat: repeat;
   background-size: 0.5em;
   background-position: -0.2em -0.2em;
+  z-index: 0;
 
   @include breakpoint(medium) {
     > * {
