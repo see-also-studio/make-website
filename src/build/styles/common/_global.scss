@@ -9,6 +9,8 @@ body {
   line-height: var(--line-height);
   color: var(--color--foreground);
   background: var(--color--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   display: flex;
   flex-direction: column;
