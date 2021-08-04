@@ -346,17 +346,26 @@ collections:
           - name: "buttonOneContent"
             label: "Pathway 1 Link Text"
             widget: "string"
+            hint: Will display on the right on desktop. Hidden on mobile.
           - name: "buttonOneHref"
             label: "Pathway 1 Link Url"
             widget: "string"
           - name: "buttonTwoContent"
-            label: "Pathway 1 Link Text"
+            label: "Pathway 2 Link Text"
             widget: "string"
+            hint: Will display on the right on desktop. Hidden on mobile.
           - name: "buttonTwoHref"
-            label: "Pathway 1 Link Url"
+            label: "Pathway 2 Link Url"
             widget: "string"
           - name: "content"
-            label: "Menu Main Content"
+            label: "Menu Content Desktop"
+            widget: "markdown"
+            buttons: [link, bulleted-list]
+            editor_components: []
+            modes: [rich_text]
+            required: false
+          - name: "contentMobile"
+            label: "Menu Content Mobile"
             widget: "markdown"
             buttons: [link, bulleted-list]
             editor_components: []

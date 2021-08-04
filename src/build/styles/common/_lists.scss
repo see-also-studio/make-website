@@ -1,5 +1,5 @@
 ul:not([class]) {
-  li {
+  > li {
     text-indent: 0.7em;
     position: relative;
 
@@ -20,4 +20,8 @@ ul:not([class]) {
   &:not(:first-child) {
     margin-top: calc(1em * var(--line-height));
   }
+}
+
+li > ul:not([class]) {
+  margin-left: 1rem;
 }

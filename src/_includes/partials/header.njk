@@ -4,11 +4,12 @@
   <div class="menu">
     <button class="menu__button">Menu</button>
     <nav class="menu__nav menu__nav--hidden">
-      {{ menu.content | markdown | safe }}
-      <ul class="content-mobile">
-        <li><a href="{{ menu.buttonOneHref }}">{{ menu.buttonOneContent }}</a></li>
-        <li><a href="{{ menu.buttonTwoHref }}">{{ menu.buttonTwoContent }}</a></li>
-      </ul>
+      <div class="content-desktop">
+        {{ menu.content | markdown | safe }}
+      </div>
+      <div class="content-mobile">
+        {{ menu.contentMobile | markdown | safe }}
+      </div>
     </nav>
   </div>
   <nav class="header__pathways content-desktop">

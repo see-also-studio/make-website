@@ -77,10 +77,10 @@
           margin-top: calc(0.5em * var(--line-height));
           transform: translateY(-50%);
         }
-      }
 
-      &:last-of-type {
-        margin-top: calc(var(--line-height) * 1em);
+        > ul {
+          margin-top: 0.4em;
+        }
       }
     }
   }
