@@ -50,7 +50,7 @@
   }
 }
 
-* + .footer__copyright {
+.footer > * + * {
   margin-top: calc(var(--line-height) * 1em);
 }
 

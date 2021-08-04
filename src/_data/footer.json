@@ -1,5 +1,5 @@
 {
-  "content": "MAKE DIGITAL HANDBOOK\nMAKE @ Story Garden, Ossulston St, Somers Town, London NW1 1DF",
+  "content": "MAKE DIGITAL HANDBOOK\nAll content © MAKE & The Living Centre, {{currentYear}} unless noted.\nMAKE @ Story Garden, Ossulston St, Somers Town, London NW1 1DF",
   "links": [
     {
       "content": "Email us",
@@ -9,6 +9,5 @@
       "content": "Instagram",
       "href": "https://www.instagram.com/makeatstorygarden/"
     }
-  ],
-  "copyright": "All content © MAKE & The Living Centre, {{currentYear}} unless noted."
+  ]
 }

@@ -400,10 +400,6 @@ collections:
                 label: "Link Url"
                 widget: "string"
                 required: true
-          - name: "copyright"
-            label: "Footer Copyright Text"
-            widget: "string"
-            required: false
 
       - name: "analytics"
         label: "Analytics"
