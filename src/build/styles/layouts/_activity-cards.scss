@@ -91,3 +91,11 @@
     }
   }
 }
+
+@supports #{'\not (aspect-ratio: 5 / 3.2)'} {
+  .activities {
+    .activities__card {
+      height: calc((100vw - var(--gap) - var(--page-margin__right) * 2) / 2 * 1.1);
+    }
+  }
+}
