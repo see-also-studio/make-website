@@ -21,12 +21,9 @@
 
 .footer__links {
   margin-top: calc(var(--line-height) * 1em);
-
-  @include breakpoint(medium) {
-    display: flex;
-    gap: 1.25em;
-    margin: 0;
-  }
+  display: flex;
+  gap: 1.25em;
+  margin: 0;
 
   .footer__link {
     text-indent: 0.7em;
