@@ -74,7 +74,9 @@ a {
   margin: -0.2rem;
 
   &:hover {
-    opacity: 0.8;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 1px;
   }
 }
 
