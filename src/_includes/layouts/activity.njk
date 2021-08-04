@@ -16,16 +16,6 @@ type: "activity"
       <div class="activity-card__description">{{ description }}</div>
     </header>
 
-    <aside class="activity-card__metadata">
-      <h2 class="activity-card__subheading">Tags</h2>
-      {% set comma = joiner() %}
-      <p>{% for tag in filterTags %}{{ comma() }} {{ tag }}{% endfor %}</p>
-      {% for item in activityMeta %}
-      <h2 class="activity-card__subheading">{{ item.heading }}</h2>
-      {{ item.content | markdown | safe }}
-      {% endfor %}
-    </aside>
-
     <section class="activity-card__content">
       {% for section in sections %}
       <h2 class="activity-card__subheading">{{ section.heading }}</h2>
@@ -38,6 +28,16 @@ type: "activity"
       {% endfor %}
       {% endfor %}
     </section>
+
+    <aside class="activity-card__metadata">
+      <h2 class="activity-card__subheading">Tags</h2>
+      {% set comma = joiner() %}
+      <p>{% for tag in filterTags %}{{ comma() }} {{ tag }}{% endfor %}</p>
+      {% for item in activityMeta %}
+      <h2 class="activity-card__subheading">{{ item.heading }}</h2>
+      {{ item.content | markdown | safe }}
+      {% endfor %}
+    </aside>
 
     <aside class="activity-card__links">
       {% for item in links %}
