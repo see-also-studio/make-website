@@ -19,6 +19,8 @@ body {
 
 body.page-index main {
   --page-margin__top: 3.6rem;
+
+  min-height: 100vh;
 }
 
 main {
