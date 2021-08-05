@@ -3,6 +3,6 @@
   "buttonTwoContent": "Explore existing activities",
   "buttonOneHref": "/i-have-a-workshop-idea/",
   "buttonTwoHref": "/explore-existing-activities/",
-  "content": "* [About MAKE](/#3-about-make)\n* [Location](/#7-where-is-make)\n* [Contact us](/#8-want-to-find-out-more)\n* [Facilities & equipment](/#6-facilities-and-equipment)\n* [View activity cards](/explore-existing-activities/#activity-cards)",
-  "contentMobile": "* [Home](/#)\n\n  * [About MAKE](/#3-about-make)\n  * [Facilities & equipment](/#6-facilities-and-equipment)\n  * [Location](/#7-where-is-make)\n  * [Contact us](/#8-want-to-find-out-more)\n* [I have a workshop idea](/i-have-a-workshop-idea/)\n* [Explore existing activities](/explore-existing-activities/)\n\n  * [View activity cards](/explore-existing-activities/#activity-cards)"
+  "content": "* [Home](/#)\n\n  * [About MAKE](/#3-about-make)\n  * [Facilities & equipment](/#6-facilities-and-equipment)\n  * [Location](/#7-where-is-make)\n  * [Contact us](/#8-want-to-find-out-more)\n* [View activity cards](/explore-existing-activities/#activity-cards)",
+  "contentMobile": "* [Home](/#)\n\n  * [About MAKE](/#3-about-make)\n  * [Facilities & equipment](/#6-facilities-and-equipment)\n  * [Location](/#7-where-is-make)\n  * [Contact us](/#8-want-to-find-out-more)\n* [Explore existing activities](/explore-existing-activities/)\n\n  * [View activity cards](/explore-existing-activities/#activity-cards)\n* [I have a workshop idea](/i-have-a-workshop-idea/)"
 }
