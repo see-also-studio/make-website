@@ -69,6 +69,9 @@ document.querySelectorAll('.activities__filter--toggle').forEach(function(el) {
     parent.classList.toggle('activities__filter--hidden');
     el.innerHTML = parent.classList.contains('activities__filter--hidden') ? 'Show filters' : 'Hide filters';
     setFiltersHeight(parent);
+    // 'Fix' for Safari z-index draw bug.
+    const footerEl = document.querySelector('.footer');
+    footerEl.style.zIndex === '0' ? footerEl.style.zIndex = '1' : footerEl.style.zIndex = '0';
   });
 });
 
