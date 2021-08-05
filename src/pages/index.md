@@ -70,7 +70,7 @@ sections:
           Making clothes, repairing furniture, working with clay, weaving textiles or running art activities about tackling the climate emergency… These are just a few of the projects and workshops that have run at MAKE.
       - type: buttonLink
         content: View existing activities at MAKE
-        href: https://example.com
+        href: /explore-existing-activities/
       - type: images
         images:
           - src: /media/uploads/joy-in-weaving-image-credit-joygun-nehar.jpg
@@ -131,7 +131,7 @@ sections:
           To request additional equipment in the space, please get in touch and talk to us! We may have access to a wider range of equipment for projects through Central Saint Martins School of Art and Design.
       - type: buttonLink
         content: Request equipment
-        href: https://example.com
+        href: "mailto: example@example.com"
   - type: expandable
     open: true
     heading: Where is MAKE?
