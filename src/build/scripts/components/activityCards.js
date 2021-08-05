@@ -39,6 +39,8 @@ filterEls.forEach(function(el) {
         filter: '*',
       });
     }
+
+    forceZIndexChange();
   });
 });
 
@@ -69,9 +71,7 @@ document.querySelectorAll('.activities__filter--toggle').forEach(function(el) {
     parent.classList.toggle('activities__filter--hidden');
     el.innerHTML = parent.classList.contains('activities__filter--hidden') ? 'Show filters' : 'Hide filters';
     setFiltersHeight(parent);
-    // 'Fix' for Safari z-index draw bug.
-    const footerEl = document.querySelector('.footer');
-    footerEl.style.zIndex = footerEl.style.zIndex === '0' ? '1' : '0';
+    forceZIndexChange();
   });
 });
 
@@ -88,4 +88,13 @@ function setFiltersHeight(wrapper) {
     //wrapper.style.height = last.offsetHeight + last.offsetTop + 'px';
     wrapper.style.height = 'auto';
   }
+}
+
+/* 'Fix' for Safari z-index draw bug.
+*  Footer z-index didn't play well with z-index content inside main if main resized (mainly triggered from toggling filters.)
+*  Force setting z-index each time seems to 'remind' the footer of it's proper z-index.
+*/
+function forceZIndexChange() {
+  const footerEl = document.querySelector('.footer');
+  footerEl.style.zIndex = footerEl.style.zIndex === '0' ? '1' : '0';
 }
