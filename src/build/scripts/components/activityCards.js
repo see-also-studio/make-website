@@ -71,7 +71,7 @@ document.querySelectorAll('.activities__filter--toggle').forEach(function(el) {
     setFiltersHeight(parent);
     // 'Fix' for Safari z-index draw bug.
     const footerEl = document.querySelector('.footer');
-    footerEl.style.zIndex === '0' ? footerEl.style.zIndex = '1' : footerEl.style.zIndex = '0';
+    footerEl.style.zIndex = footerEl.style.zIndex === '0' ? '1' : '0';
   });
 });
 
