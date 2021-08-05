@@ -34,6 +34,8 @@ activityMeta:
       * Artist/Clay Facilitator
       * Kiln Technician to support with glaze and firings
       * Student support (optional)
+  - heading: Costs
+    content: "* £25 per person"
 links:
   - type: link
     content: Download activity planning form
