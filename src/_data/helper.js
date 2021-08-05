@@ -28,6 +28,10 @@ module.exports = {
     return string;
   },
 
+  isExternalLink(href) {
+    return href && (!href.includes('makeatsomerstown.com') && !href.startsWith('/') && !href.startsWith('#')) ? true : false;
+  },
+
   galleryType(length) {
     string ='';
     if (length === 1) {
