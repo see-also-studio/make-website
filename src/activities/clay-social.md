@@ -29,13 +29,13 @@ activityMeta:
       * Hand tools for clay
   - heading: Timeline
     content: Every week, 2–3hr sessions
+  - heading: Costs
+    content: "* £25 per person"
   - heading: Facilitators, Staff Requirements, Skills
     content: |-
       * Artist/Clay Facilitator
       * Kiln Technician to support with glaze and firings
       * Student support (optional)
-  - heading: Costs
-    content: "* £25 per person"
 links:
   - type: link
     content: Download activity planning form
