@@ -42,4 +42,12 @@ links:
     href: https://makeatsomerstown.netlify.app/
 sections:
   - heading: Images
+    blocks:
+      - type: images
+        images:
+          - src: /media/uploads/img-20201201-wa0017.jpeg
+          - src: /media/uploads/copy-of-img_3030.jpg.jpg
+      - type: images
+        images:
+          - src: /media/uploads/screenshot-2021-08-05-at-18.45.38.png
 ---
