@@ -40,13 +40,12 @@ sections:
   - heading: Images
     blocks:
       - type: images
-  - heading: About
-    blocks:
-      - type: images
         images:
           - src: /media/uploads/img_1333.jpeg.jpg
           - src: /media/uploads/img_1313.jpeg.jpg
           - src: /media/uploads/img_1291.jpeg.jpg
+  - heading: About
+    blocks:
       - type: content
         content: "*MAKE a Stool* invites participants to craft their own unique piece of
           wooden furniture. Following a simple archetypal template, they will
