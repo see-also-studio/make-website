@@ -31,10 +31,10 @@ activityMeta:
     heading: Facilitators, staff requirements, skills
 links:
   - type: link
-    content: Images
+    content: Download images
     href: makeatsomerstown.netlify.app
   - type: link
-    content: Instructions
+    content: Download instructions
     href: makeatsomerstown.netlify.app
 sections:
   - heading: Images
