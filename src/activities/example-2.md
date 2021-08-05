@@ -7,10 +7,6 @@ filterTags:
   - Clay
   - Materials
 activityMeta:
-  - heading: About
-    content: A DIY at home pack with activities to keep keep children and their
-      families busy. The pack includes a printed booklet with activities from
-      Global Generation and students from CSM.
   - heading: Participants
     content: |-
       * Children and their families age 5 +
@@ -50,4 +46,10 @@ sections:
           - src: /media/uploads/img-20201201-wa0017.jpeg
           - src: /media/uploads/copy-of-img_3030.jpg.jpg
           - src: /media/uploads/screenshot-2021-08-05-at-18.45.38.png
+  - heading: About
+    blocks:
+      - type: content
+        content: A DIY at home pack with activities to keep keep children and their
+          families busy. The pack includes a printed booklet with activities
+          from Global Generation and students from CSM.
 ---
