@@ -2,13 +2,15 @@
 title: Story Garden Activity Packs
 layout: layouts/activity.njk
 permalink: activities/{{ title | slug }}/
-description: A DIY at home pack with activities to keep keep children and their
-  families busy. The pack includes a printed booklet with activities from Global
-  Generation and students from CSM.
+description: ""
 filterTags:
   - Clay
   - Materials
 activityMeta:
+  - heading: About
+    content: A DIY at home pack with activities to keep keep children and their
+      families busy. The pack includes a printed booklet with activities from
+      Global Generation and students from CSM.
   - heading: Participants
     content: |-
       * Children and their families age 5 +
