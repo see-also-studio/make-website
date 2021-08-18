@@ -1,6 +1,8 @@
 <header class="header">
-  <h1 class="header__logo site-title"><a href="/">{% include "components/logo.njk" %}</a></h1>
-  <a class="header__partner-link" href="{{ header.headerLinkHref }}" target="_blank">{{ header.headerLinkContent }}</a>
+  <div class="header__top">
+    <h1 class="header__logo site-title"><a href="/">{% include "components/logo.njk" %}</a></h1>
+    <a class="header__partner-link" href="{{ header.headerLinkHref }}" target="_blank">{{ header.headerLinkContent }}</a>
+  </div>
   <div class="menu">
     <button class="menu__button">Menu</button>
     <nav class="menu__nav menu__nav--hidden">
