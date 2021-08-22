@@ -2,7 +2,7 @@
   display: block;
   width: auto;
   max-width: max-content;
-  //font-size: var(--font-size--small);
+  font-size: var(--font-size--small);
   text-decoration: none;
   background: var(--color--alt1);
   border: var(--border);
@@ -19,5 +19,5 @@
 }
 
 .button--rounded + .button--rounded {
-  margin-top: 0.55rem;
+  margin-top: 0.75rem;
 }
