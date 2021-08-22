@@ -15,3 +15,9 @@ function scrollHandler() {
   headerLogo.classList.toggle('header__logo--active', !headerVisible);
   headerWrapper.classList.toggle('header__top--transparent', headerVisible);
 }
+
+window.addEventListener('scroll', stickyMenu);
+function stickyMenu() {
+  const menuRaiseAmount = Math.max(0, window.innerHeight - mainContent.getBoundingClientRect().bottom + 1);
+  document.querySelector('body').style.setProperty('--menu-raise-amount', menuRaiseAmount + 'px');
+}

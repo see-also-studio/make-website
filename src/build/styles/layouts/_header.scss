@@ -42,9 +42,10 @@
   left: 0;
   font-size: var(--font-size--small);
   width: max-content;
+  padding-right: 1em;
   z-index: 100;
   pointer-events: none;
-  overflow: visible !important; // So drop shadow doesn't dissappear
+  overflow: hidden;
   max-width: 100%;
 
   > * {
@@ -136,6 +137,11 @@
       z-index: 15;
     }
   }
+}
+
+.menu,
+.header__pathways {
+  bottom: var(--menu-raise-amount);
 }
 
 @include breakpoint(medium) {
