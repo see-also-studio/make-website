@@ -30,4 +30,5 @@ sections:
       - type: buttonLink
         content: Email us
         href: "mailto: hello@makeatsomerstown.com"
+numbered: false
 ---

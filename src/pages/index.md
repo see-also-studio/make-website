@@ -188,4 +188,5 @@ sections:
           Privacy policy.
 
           Thanks/credits.
+numbered: true
 ---

@@ -177,6 +177,10 @@ collections:
                           label: "Link"
                           widget: "string"
                           required: false
+      - name: "numbered"
+        label: "Number sub-sections"
+        widget: boolean
+        default: true
 
   - name: "activities"
     label: "Activities"

@@ -6,9 +6,11 @@
       font-size: var(--font-size--heading);
       line-height: 1.2;
 
-      &::before {
-        counter-increment: section;
-        content: counter(section, decimal-leading-zero) ". ";
+      &.expandable__heading--numbered {
+        &::before {
+          counter-increment: section;
+          content: counter(section, decimal-leading-zero) ". ";
+        }
       }
     }
   }
@@ -26,16 +28,6 @@
 
     > *:last-child {
       margin-bottom: calc(3.25rem * 1.75);
-    }
-  }
-}
-
-.expandable:only-of-type {
-  .expandable__summary {
-    .expandable__heading {
-      &::before {
-        content: "";
-      }
     }
   }
 }
