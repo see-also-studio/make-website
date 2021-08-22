@@ -179,7 +179,7 @@ sections:
         href: https://www.instagram.com/makeatstorygarden/
   - type: expandable
     open: true
-    heading: Legals
+    heading: Colophon
     section:
       - type: content
         content: "Short text re: sponsors"
