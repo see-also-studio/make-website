@@ -1,4 +1,6 @@
 .header {
+  --menu-raise-amount: 0;
+
   .header__top {
     position: fixed;
     top: 0;
@@ -39,7 +41,6 @@
 
 .menu {
   position: fixed;
-  bottom: 0;
   left: 0;
   font-size: var(--font-size--small);
   width: max-content;
@@ -109,7 +110,6 @@
 .header__pathways {
   position: fixed;
   display: block;
-  bottom: 0;
   right: 0;
   font-size: var(--font-size--small);
   z-index: 95;

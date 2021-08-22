@@ -1,3 +1,4 @@
+const header = document.querySelector('.header');
 const indexHeader = document.querySelector('.index-header');
 const mainContent = document.querySelector('#main');
 const headerLogo = document.querySelector('.header__logo');
@@ -19,5 +20,5 @@ function scrollHandler() {
 window.addEventListener('scroll', stickyMenu);
 function stickyMenu() {
   const menuRaiseAmount = Math.max(0, window.innerHeight - mainContent.getBoundingClientRect().bottom + 1);
-  document.querySelector('body').style.setProperty('--menu-raise-amount', menuRaiseAmount + 'px');
+  header.style.setProperty('--menu-raise-amount', menuRaiseAmount + 'px');
 }

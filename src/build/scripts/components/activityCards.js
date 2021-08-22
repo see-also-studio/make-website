@@ -41,6 +41,7 @@ filterEls.forEach(function(el) {
     }
 
     forceZIndexChange();
+    stickyMenu();
   });
 });
 
@@ -72,6 +73,7 @@ document.querySelectorAll('.activities__filter--toggle').forEach(function(el) {
     el.innerHTML = parent.classList.contains('activities__filter--hidden') ? 'Show filters' : 'Hide filters';
     setFiltersHeight(parent);
     forceZIndexChange();
+    stickyMenu();
   });
 });
 
