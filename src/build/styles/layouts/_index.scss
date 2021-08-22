@@ -3,8 +3,10 @@ body.page-index {
     .header__logo {
       transition-duration: 200ms;
       transition-property: opacity;
+    }
 
-      &:not(.header__logo--active) {
+    &.header--transparent {
+      .header__logo {
         opacity: 0;
         pointer-events: none;
       }

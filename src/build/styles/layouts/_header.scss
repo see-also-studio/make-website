@@ -14,11 +14,6 @@
     padding-right: var(--page-margin__right);
     z-index: 50;
 
-    &:not(.header__top--transparent) {
-      background: var(--color--background);
-      box-shadow: 0 0 0.5em 0.7em var(--color--background);
-    }
-
     .header__logo {
       width: 8rem;
       margin-bottom: -1rem;
@@ -35,6 +30,13 @@
 
     .header__partner-link {
       font-size: 0.55rem;
+    }
+  }
+
+  &:not(.header--transparent) {
+    .header__top {
+      background: var(--color--background);
+      box-shadow: 0 0 0.5em 0.7em var(--color--background);
     }
   }
 }
