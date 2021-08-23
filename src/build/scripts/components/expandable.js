@@ -50,6 +50,7 @@
     this.el.style.height = this.el.offsetHeight + 'px';
     this.el.open = true;
     window.requestAnimationFrame(() => this.expand());
+    stickyMenu();
   }
 
   expand() {
@@ -78,6 +79,7 @@
     this.isClosing = false;
     this.isExpanding = false;
     this.el.style.height = this.el.style.overflow = '';
+    stickyMenu();
   }
 }
 
