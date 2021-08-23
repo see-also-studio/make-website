@@ -24,10 +24,15 @@ body.page-index {
   background: #EAEAEA;
   padding-left: var(--page-margin__left);
   padding-right: var(--page-margin__right);
-  height: 100vh;
-  max-height: 125vw;
+  height: calc(100vh - 5.35rem);
+  max-height: auto;
   z-index: 10;
   overflow: hidden;
+
+  @include breakpoint(medium) {
+    height: 100vh;
+    max-height: 125vw;
+  }
 
   &.index-header--hidden {
     visibility: hidden;
