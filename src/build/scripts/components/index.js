@@ -10,6 +10,7 @@ if (indexHeader) {
 function scrollHandler() {
   const headerVisible = mainContent.getBoundingClientRect().top >= 5 ? true : false;
   header.classList.toggle('header--transparent', headerVisible);
+  indexHeader.classList.toggle('index-header--hidden', !headerVisible);
 }
 
 window.addEventListener('scroll', stickyMenu);
