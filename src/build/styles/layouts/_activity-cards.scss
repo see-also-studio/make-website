@@ -48,10 +48,13 @@
       --gap: 1.8rem;
     }
 
+    @include breakpoint(medium) {
+      margin-left: 1rem;
+    }
+
     min-height: 50vh;
     margin-top: 2.7rem;
     margin-bottom: 3.25rem;
-    margin-left: 1rem;
 
     .gutter-sizer {
       width: calc(var(--gap) - 2px);
