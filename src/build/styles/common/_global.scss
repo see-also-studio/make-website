@@ -17,6 +17,10 @@ body {
   min-height: 100vh;
 }
 
+::selection {
+  background: var(--color--alt3);
+}
+
 body.page-index main {
   --page-margin__top: 3.6rem;
 
