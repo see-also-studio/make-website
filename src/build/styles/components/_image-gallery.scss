@@ -17,10 +17,6 @@
       aspect-ratio: 5 / 3.2;
       object-fit: contain;
       object-position: center bottom;
-
-      @supports #{'\not (aspect-ratio: 5 / 3.2)'} {
-        max-height: 15.6em;
-      }
     }
   }
 
@@ -132,6 +128,36 @@
 
     @include breakpoint(medium) {
       margin-left: var(--indent-reverse);
+    }
+  }
+}
+
+@supports #{'\not (aspect-ratio: 5 / 3.2)'} {
+  .gallery {
+    &.gallery--full {
+      img {
+        height: calc(100vw * 0.535);
+
+        @include breakpoint(medium) {
+          height: calc(100vw * 0.4);
+        }
+      }
+    }
+
+    &.gallery--double {
+      img {
+        height: calc((100vw - 1rem) / 2 * 0.64);
+      }
+    }
+
+    &.gallery--single {
+      img {
+        height: calc(100vw * 0.64);
+
+        @include breakpoint(medium) {
+          height: calc(100vw * ((100 - var(--indent)) / 100) * 0.64);
+        }
+      }
     }
   }
 }
