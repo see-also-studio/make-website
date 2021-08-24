@@ -14,6 +14,9 @@
     this.isClosing = false;
     this.isOpening = false;
     this.button.addEventListener('click', (e) => this.onClick(e));
+
+    this.links = el.querySelectorAll('.menu__nav a');
+    this.links.forEach(link => link.addEventListener('click', () => this.close()));
   }
 
   onClick(e) {
