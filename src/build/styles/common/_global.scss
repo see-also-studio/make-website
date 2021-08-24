@@ -21,6 +21,11 @@ body {
   background: var(--color--alt3);
 }
 
+:target {
+  padding-top: 3rem;
+  margin-top: -3rem;
+}
+
 body.page-index main {
   --page-margin__top: 3.6rem;
 
@@ -39,6 +44,7 @@ main {
 
   &:not(.activity-card) {
     padding-top: var(--page-margin__top);
+    margin-top: 0;
 
     & > * {
       &:not(.activities),
