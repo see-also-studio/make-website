@@ -185,8 +185,8 @@ sections:
         content: "Short text re: sponsors"
       - type: content
         content: |-
-          Privacy policy.
+          Privacy policy / thanks
 
-          Thanks/credits.
+          Web design & development by [See, Also](https://see-also.com)
 numbered: true
 ---
