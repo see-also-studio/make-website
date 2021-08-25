@@ -49,6 +49,8 @@ main.activity-card {
     background: var(--color--background--alt);
 
     .activity-card__header {
+      margin-bottom: calc(1rem * var(--line-height));
+
       .activity-card__heading {
         margin-bottom: 0;
       }
@@ -56,7 +58,6 @@ main.activity-card {
       .activity-card__description {
         //@at-root: var(--font-size--small);
         margin-top: calc(1rem * var(--line-height));
-        margin-bottom: calc(1rem * var(--line-height));
         min-height: calc(3em * var(--line-height));
       }
     }
@@ -117,10 +118,15 @@ main.activity-card {
 
       .activity-card__metadata {
         grid-area: meta;
+        max-width: none;
       }
 
       .activity-card__links {
         grid-area: links;
+
+        .button--rounded {
+          max-width: none;
+        }
       }
 
       .activity-card__content {

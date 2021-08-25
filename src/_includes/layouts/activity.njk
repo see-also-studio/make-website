@@ -13,7 +13,7 @@ type: "activity"
   <article class="activity-card__wrapper">
     <header class="activity-card__header">
       <h1 class="activity-card__heading heading heading--large">{{ title }}</h1>
-      <div class="activity-card__description">{{ description }}</div>
+      {% if description %}<div class="activity-card__description">{{ description }}</div>{% endif %}
     </header>
 
     <section class="activity-card__content">
