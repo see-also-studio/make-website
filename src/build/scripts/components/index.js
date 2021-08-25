@@ -14,6 +14,7 @@ function scrollHandler() {
 }
 
 window.addEventListener('scroll', stickyMenu);
+stickyMenu();
 function stickyMenu() {
   const menuRaiseAmount = Math.max(0, window.innerHeight - mainContent.getBoundingClientRect().bottom);
   header.style.setProperty('--menu-raise-amount', menuRaiseAmount + 'px');
