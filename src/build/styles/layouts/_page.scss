@@ -1,0 +1,27 @@
+.heading--large {
+  transition-property: margin-top;
+  transition-duration: 400ms;
+}
+
+.expandable--empty + .heading--large,
+.expandable:not([open]) + .heading--large {
+  margin-top: calc(3.25rem * 1.75);
+}
+
+.heading--large + .expandable {
+  margin-top: 3.85rem;
+}
+
+.expandable:not(.expandable--empty) {
+  &:not(:last-child) {
+    .expandable__wrapper {
+      > *:last-child {
+        margin-bottom: calc(3.25rem * 1.75);
+      }
+    }
+  }
+}
+
+main:not(.activity-card) {
+  padding-bottom: calc(3.25rem * 1.75);
+}

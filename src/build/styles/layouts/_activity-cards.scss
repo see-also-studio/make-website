@@ -1,4 +1,6 @@
 .activities {
+  margin-top: calc(3.25rem * 1.75);
+
   .activities__filters {
     font-size: var(--font-size--small);
     display: flex;
@@ -54,7 +56,6 @@
 
     min-height: 50vh;
     margin-top: 2.7rem;
-    margin-bottom: 3.25rem;
 
     .gutter-sizer {
       width: calc(var(--gap) - 2px);
