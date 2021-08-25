@@ -65,12 +65,8 @@
   .activities__card {
     width: calc(50% - var(--gap) / 2);
     aspect-ratio: 9 / 11;
-    border: var(--border);
-    border-radius: 0.75rem;
-    background: var(--color--background--alt);
     float: left;
     margin-bottom: calc(var(--gap) * 1.15);
-    overflow: hidden;
 
     > a {
       width: 100%;
@@ -81,6 +77,16 @@
       text-decoration: none;
       margin: 0;
       padding: 0;
+      border: var(--border);
+      border-radius: 0.75rem;
+      background: var(--color--background--alt);
+      transition-duration: 300ms;
+    }
+
+    &:hover {
+      > a {
+        transform: rotate(3deg);
+      }
     }
 
     .activities__heading {
