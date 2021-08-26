@@ -66,6 +66,8 @@ body.page-index {
     height: var(--size);
     top: #{'max(calc(0 * var(--size)),calc(((100% - var(--size))/ 100) * var(--random-top)))'};
     left: #{'max(calc(0 * var(--size)),calc(((100% - var(--size))/ 100) * var(--random-left)))'};
+    touch-action: none;
+    user-select: none;
 
     img {
       object-fit: contain;
