@@ -39,6 +39,8 @@ body.page-index {
   }
 
   .index-header__logo {
+    pointer-events: none;
+
     @include breakpoint(untilMedium) {
       --indent: 15;
 
@@ -71,69 +73,51 @@ body.page-index {
       height: 100%;
     }
 
-    &:nth-child(1) {
+    &.draggable--shapes {
       --size: 3.7rem;
       --random-top: 28;
       --random-left: 6;
     }
 
-    &:nth-child(2) {
+    &.draggable--tools {
       --size: 3.3rem;
       --random-top: 66;
       --random-left: 4;
     }
 
-    &:nth-child(3) {
-      --size: 2.9rem;
-      --random-top: 86;
-      --random-left: 24;
-    }
-
-    &:nth-child(4) {
+    &.draggable--materials {
       --size: 2.5rem;
       --random-top: 11;
       --random-left: 37;
     }
 
-    &:nth-child(5) {
-      --size: 2.5rem;
-      --random-top: 13;
-      --random-left: 67;
-    }
-
-    &:nth-child(6) {
+    &.draggable--lightbulb {
       --size: 3.6rem;
       --random-top: 22;
       --random-left: 92;
     }
 
-    &:nth-child(7) {
+    &.draggable--plant {
       --size: 3.3rem;
       --random-top: 66;
       --random-left: 97;
     }
 
-    &:nth-child(8) {
-      --size: 3.1rem;
-      --random-top: 82;
-      --random-left: 78;
-    }
-
-    &:nth-child(9) {
+    &.draggable--plane1 {
       --size: 5rem;
       --random-top: 50;
       --random-left: 16;
     }
 
-    &:nth-child(10) {
+    &.draggable--plane2 {
       --size: 4.9rem;
       --random-top: 60;
       --random-left: 80;
     }
 
     @include breakpoint(untilMedium) {
-      &:nth-child(9),
-      &:nth-child(10) {
+      &.draggable--plane1,
+      &.draggable--plane2 {
         display: none;
       }
     }

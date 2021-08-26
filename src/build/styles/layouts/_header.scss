@@ -13,6 +13,12 @@
     padding-left: var(--page-margin__left);
     padding-right: var(--page-margin__left);
     z-index: 50;
+    pointer-events: none;
+
+    > * {
+      align-self: flex-start;
+      pointer-events: auto;
+    }
 
     .header__logo {
       width: 8rem;
