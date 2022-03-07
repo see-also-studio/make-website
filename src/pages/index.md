@@ -173,7 +173,7 @@ sections:
           Living Centre Manager.
       - type: buttonLink
         content: Email Joned
-        href: "mailto: example@example.com"
+        href: "mailto: hello@makeatsomerstown.com"
       - type: buttonLink
         content: MAKE Instagram
         href: https://www.instagram.com/makeatstorygarden/
