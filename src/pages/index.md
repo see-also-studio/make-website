@@ -131,7 +131,7 @@ sections:
           To request additional equipment in the space, please get in touch and talk to us! We may have access to a wider range of equipment for projects through Central Saint Martins School of Art and Design.
       - type: buttonLink
         content: Request equipment
-        href: "mailto: example@example.com"
+        href: "mailto: hello@makeatsomerstown.com"
   - type: expandable
     open: true
     heading: Where is MAKE?
