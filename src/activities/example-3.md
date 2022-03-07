@@ -30,12 +30,12 @@ activityMeta:
       * Student support (optional)
     heading: Facilitators, staff requirements, skills
 links:
-  - type: link
+  - type: file
     content: Download images
-    href: makeatsomerstown.netlify.app
-  - type: link
+    href: /media/uploads/test.pdf
+  - type: file
     content: Download instructions
-    href: makeatsomerstown.netlify.app
+    href: /media/uploads/test.pdf
 sections:
   - heading: Images
     blocks:
