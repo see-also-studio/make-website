@@ -29,15 +29,15 @@ activityMeta:
       * Indesign or access to a graphic designer
     heading: Facilitators, staff requirements, skills
 links:
-  - type: link
+  - type: file
     content: Download printed booklet template
-    href: https://makeatsomerstown.netlify.app/
-  - type: link
+    href: /media/uploads/test.pdf
+  - type: file
     content: Download laser cut design files
-    href: https://makeatsomerstown.netlify.app/
-  - type: link
+    href: /media/uploads/test.pdf
+  - type: file
     content: Download print files
-    href: https://makeatsomerstown.netlify.app/
+    href: /media/uploads/test.pdf
 sections:
   - heading: Images
     blocks:
