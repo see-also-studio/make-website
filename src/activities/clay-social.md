@@ -37,15 +37,15 @@ activityMeta:
       * Kiln Technician to support with glaze and firings
       * Student support (optional)
 links:
-  - type: link
+  - type: file
     content: Download activity planning form
-    href: https://example.com
-  - type: link
+    href: /media/uploads/test.pdf
+  - type: file
     content: Download sample excersises
-    href: https://example.com
-  - type: link
+    href: /media/uploads/test.pdf
+  - type: file
     content: Download workshop images
-    href: https://example.com
+    href: /media/uploads/test.pdf
 sections:
   - heading: Images
     blocks:
