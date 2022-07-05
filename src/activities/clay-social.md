@@ -29,8 +29,6 @@ activityMeta:
       * Hand tools for clay
   - heading: Timeline
     content: Every week, 2–3hr sessions
-  - heading: Costs
-    content: "* £25 per person"
   - heading: Facilitators, Staff Requirements, Skills
     content: |-
       * Artist/Clay Facilitator
@@ -58,8 +56,6 @@ sections:
           - src: /media/uploads/dsc06147.jpg
             caption: Image © Maria Fidelis
           - src: /media/uploads/dsc06153.jpg
-            caption: Image © Maria Fidelis
-          - src: /media/uploads/raku-kiln.jpg
             caption: Image © Maria Fidelis
           - src: /media/uploads/mara-fidelis-school.jpg
             caption: Image © Maria Fidelis
