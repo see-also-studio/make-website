@@ -41,7 +41,7 @@ links:
     content: Download activity planning form
     href: /media/uploads/test.pdf
   - type: file
-    content: Download sample excersises
+    content: Download sample exercises
     href: /media/uploads/test.pdf
   - type: file
     content: Download workshop images
