@@ -25,7 +25,7 @@ sections:
 
           Once we’ve received your proposal we’ll be in touch to organise a time for you to come to MAKE and discuss your proposal.
       - type: buttonFile
-        href: /media/uploads/test.pdf
+        href: /media/uploads/project-proposal-template_simplified_final_june-2022.docx
         content: Download proposal form
       - type: buttonLink
         content: Email us
