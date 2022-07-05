@@ -24,8 +24,6 @@ activityMeta:
     heading: Equipment and tools
   - heading: Timeline
     content: 3 times a week; 1 hour sessions
-  - heading: Costs
-    content: "* £25 per session (approx.)"
   - content: |-
       * Artist Facilitator with online workshop leading skills
       * Online Moderator: trained in mental health first aider
