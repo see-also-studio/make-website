@@ -156,7 +156,7 @@ sections:
       - type: content
         content: "Map:"
       - type: map
-        location: '{"type":"Point","coordinates":[-0.1289847,51.5307172]}'
+        location: '{"type":"Point","coordinates":[-0.1270851,51.5313821]}'
         alt: Map of MAKE Story Garden
       - type: content
         content: |-
@@ -169,10 +169,10 @@ sections:
     heading: Want to find out more?
     section:
       - type: content
-        content: For more information or to get involved, please contact Joned Khan,
-          Living Centre Manager.
+        content: For more information or to get involved, please contact Jodie Allen,
+          Living Centre Operations Manager.
       - type: buttonLink
-        content: Email Joned
+        content: Email Jodie
         href: "mailto: hello@makeatsomerstown.com"
       - type: buttonLink
         content: MAKE Instagram
