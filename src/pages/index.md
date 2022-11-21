@@ -182,11 +182,7 @@ sections:
     heading: Colophon
     section:
       - type: content
-        content: "Short text re: sponsors"
-      - type: content
         content: |-
-          Privacy policy / thanks
-
           Web design & development by [See, Also](https://see-also.com)
 numbered: true
 ---
